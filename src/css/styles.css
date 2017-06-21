@@ -262,7 +262,7 @@ p {
   min-height: 100%;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 1em;
+  padding: 3em;
   text-align: center;
 }
 .Chat {
@@ -306,13 +306,10 @@ p {
   -webkit-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out;
   color: #fff;
-  padding: 0.5em;
+  padding: 0.75em;
 }
 .header__link a:hover {
   background-color: #2993fc;
-}
-.header__spacer {
-  margin: 0;
 }
 .Hero {
   min-height: 400px;
@@ -328,8 +325,11 @@ p {
       -ms-flex-align: center;
           align-items: center;
 }
+.Sections {
+  text-align: center;
+}
 .Section {
-  margin-bottom: 2em;
+  margin-bottom: 3em;
   padding: 1em;
   border: 1px solid rgba(255,255,255,0.3);
 }
