@@ -275,6 +275,7 @@ p {
   width: auto !important;
   background-color: #fff;
   color: #2993fc;
+  display: block;
 }
 .chat-message:first-child {
   background-color: #2993fc;
@@ -327,7 +328,8 @@ p {
       -ms-flex-align: center;
           align-items: center;
 }
-.Sections {
+.Section {
+  margin-bottom: 2em;
   padding: 1em;
   border: 1px solid rgba(255,255,255,0.3);
 }
