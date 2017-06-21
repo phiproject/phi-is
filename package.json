@@ -10,6 +10,7 @@
     "react-gsap-enhancer": "^0.3.0",
     "react-router": "^4.1.1",
     "react-router-dom": "^4.1.1",
+    "react-waypoint": "^7.0.4",
     "scrollmagic": "^2.0.5"
   },
   "devDependencies": {
