@@ -1,0 +1,75 @@
+/*
+  This file contains Variables, and basic typography styles.
+*/
+
+// Variables - reference these anywhere inside .styl files
+
+// Colors
+blue = #2993fc
+yellow = #f8b02a
+red = #fd5e60
+orange = #fd8b34
+white = #ffffff
+offwhite = #fafafa
+lightgrey  = #EDEEED
+bg_blue = #83d1eb
+bg_purple = #be68a9
+gray = rgba(255,255,255,0.3)
+
+// Sizes
+
+
+// Fonts - import any fonts here.
+@import url(https://fonts.googleapis.com/css?family=Nunito)
+
+// Default font-family and text size for the whole app
+html
+  font-family Nunito
+  font-size 16px
+  font-family sans-serif
+  background-color bg_blue
+  background linear-gradient(top, bg_blue, bg_purple)
+  min-height 100%
+
+// Text and div alignment
+.center
+  text-align center
+.right
+  text-align right
+.left
+  text-align left
+.block
+  display block
+.inline
+  display inline
+.inline-block
+  display inline-block
+
+// Links
+a
+  text-decoration none
+
+// Headings
+h1
+  // font-family Futura
+  font-weight 400
+  text-align center
+  font-size 4rem
+  margin 2rem 0
+  letter-spacing -1px
+  a
+    color white
+    text-decoration none
+    &:focus
+      outline 0
+
+h2
+  font-weight 300
+  font-size 2.5em
+  padding 0 1em
+
+// Basic HTML elements
+p
+  font-size 1.6rem
+  line-height 1.5
+  color white

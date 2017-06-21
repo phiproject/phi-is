@@ -1,0 +1,9 @@
+/*
+   This file will: compile all the style files to 'styles.css', and will apply auto-prfixers.
+*/
+
+// 1. Import all base styles first - typography, normalize
+@require './_*.styl'
+
+// 2. Import all component styles second - as they will require above
+@require '../components/*.styl'

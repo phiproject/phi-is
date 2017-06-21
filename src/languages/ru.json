@@ -1,0 +1,55 @@
+{
+   "header":{
+      "left_links":[
+         {
+            "title":"Create",
+            "url":"#create"
+         },
+         {
+            "title":"Simulate",
+            "url":"#simulate"
+         },
+         {
+            "title":"Invest",
+            "url":"#invest"
+         },
+         {
+            "title":"Reorganize",
+            "url":"#reorganize"
+         }
+      ],
+      "right_links":[
+         {
+            "title":"Slack",
+            "url":"",
+            "target":"_blank"
+         },
+         {
+            "title":"Github",
+            "url":"",
+            "target":"_blank"
+         },
+         {
+            "title":"English",
+            "url":"/en/"
+         }
+      ]
+   },
+   "hero":{
+      "logo": "logo.svg",
+      "title": "Проект Phi",
+      "subtitle": "Токсизированная ответственность",
+      "buttons": []
+   },
+   "footer":{
+      "sections":[],
+      "urls":[],
+      "image_urls":[]
+   },
+   "sections":[
+      {
+         "chat":[],
+         "animation":""
+      }
+   ]
+}

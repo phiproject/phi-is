@@ -1,0 +1,58 @@
+{
+   "header":{
+      "left_links":[
+         {
+            "title":"Create",
+            "url":"#create"
+         },
+         {
+            "title":"Simulate",
+            "url":"#simulate"
+         },
+         {
+            "title":"Invest",
+            "url":"#invest"
+         },
+         {
+            "title":"Reorganize",
+            "url":"#reorganize"
+         }
+      ],
+      "right_links":[
+         {
+            "title":"Slack",
+            "url":""
+         },
+         {
+            "title":"Github",
+            "url":""
+         },
+         {
+            "title":"Russian",
+            "url":"/ru/"
+         }
+      ]
+   },
+   "hero":{
+      "logo": "logo.svg",
+      "title": "Phi Project",
+      "subtitle": "Tokenised Responsibility",
+      "buttons": [
+
+      ]
+   },
+   "footer":{
+      "sections":[],
+      "urls":[],
+      "image_urls":[]
+   },
+   "sections":[
+      {
+         "chat":[
+            "What is Phi?",
+            "Phi is a simulation environment that enables people to explore the potential effects of decentralised energy, currency, and governence on their lives."
+         ],
+         "animation":""
+      }
+   ]
+}
