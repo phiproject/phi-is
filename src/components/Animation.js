@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { TimelineMax, Sine } from 'gsap'
-import { randomInt } from '../helpers'
 import Waypoint from 'react-waypoint'
+import { randomInt } from '../helpers'
 
 function appear(id) {
   let time = randomInt(1,5)
@@ -20,11 +20,13 @@ function appear(id) {
 class Animation extends Component {
 
   componentWillMount() {
+    // Setup object id, and a place to store animations
     this.id = this.props.id+'-anim'
     this.anims = {}
   }
 
   componentDidMount() {
+    // Setup animations once the component is actually in scope
     this.anims.enter = appear(this.id)
   }
 
@@ -33,13 +35,13 @@ class Animation extends Component {
   }
 
   waypointLeave = () => {
-    this.anims.enter.stop()
+    this.anims.enter.pause(0, true) // resets animation timeline
   }
 
   render() {
     return (
       <div className="Animation">
-        <Waypoint onEnter={this.waypointEnter} onLeave={this.waypointLeave} >
+        <Waypoint onEnter={this.waypointEnter} onLeave={this.waypointLeave}>
           <div id={this.id}>
             Animation here
           </div>
