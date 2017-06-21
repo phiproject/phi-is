@@ -1,17 +1,20 @@
 import React, { Component } from 'react'
 import Chat from './Chat'
+import Animation from './Animation'
 
 class Section extends Component {
    render() {
       const messages = this.props.chat
       return (
-         <div id={this.props.id} className="Section">
-            <div className="w-1of3">
-               <Chat messages={messages} />
-            </div>
-            <div className="w-2of3">
-               animatons go here
-            </div>
+         <div id={this.props.id} className="Section row">
+
+               <div className="col s12 m8 l5">
+                  <Chat messages={messages} />
+               </div>
+               <div className="col s12 m12 l7">
+                  <Animation />
+               </div>
+
          </div>
       )
    }

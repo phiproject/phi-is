@@ -27,6 +27,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <div className="bg-grid"></div>
         <Header data={this.data.header} />
         <Hero data={this.data.hero} />
         <Sections data={this.data.sections} />

@@ -15,13 +15,13 @@ class Header extends Component {
    render() {
       const { left_links, right_links } = this.props.data
       return (
-         <div className="Header">
+         <div className="Header row">
 
-            <div className="w-1of2 left">
+            <div className="col s12 m6 left">
                { left_links.map((link,i) => this.renderLink(link,i) ) }
             </div>
 
-            <div className="w-1of2 right">
+            <div className="col s12 m6 right">
                { right_links.map((link,i) => this.renderLink(link,i) ) }
             </div>
 

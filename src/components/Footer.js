@@ -31,9 +31,9 @@ class Footer extends Component {
       } = this.props.data
 
       return (
-         <div className="Footer">
+         <div className="Footer row">
 
-            <div className="w-1of2">
+            <div className="col s12 m6">
 
                <div className="message footer__box footer__description">{description}</div>
 
@@ -49,7 +49,7 @@ class Footer extends Component {
 
             </div>
 
-            <div className="w-1of2">
+            <div className="col s12 m6">
 
                <div className="footer__links right">
                   { text_links.map((link,i) => this.renderLink(link,i)) }
