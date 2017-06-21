@@ -1,11 +1,14 @@
 import React, { Component } from 'react'
-// import axios from 'axios'
 
 // Import Page Components
 import Header from './Header'
 import Hero from './Hero'
 import Sections from './Sections'
 import Footer from './Footer'
+
+// Import Animation timline controls
+// import { TimelineMax } from 'gsap'
+import * as ScrollMagic from 'scrollmagic'
 
 // Import Languages
 import en from '../languages/en.json'
@@ -15,6 +18,8 @@ import ru from '../languages/ru.json'
 const languages = { en, ru }
 const languageDefault = 'en'
 
+
+// Main component - will be rendered to #root in public/index.html
 class App extends Component {
 
   componentWillMount() {
@@ -22,6 +27,7 @@ class App extends Component {
     const languageRequest = this.props.match.params.language
     this.lang = (languageRequest) ? languageRequest : languageDefault
     this.data = languages[this.lang]
+    window.controller = new ScrollMagic.Controller(); // shouldn't do this in react, but the scope is too small, and it's only one page.
   }
 
   render() {

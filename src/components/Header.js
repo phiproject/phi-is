@@ -17,11 +17,11 @@ class Header extends Component {
       return (
          <div className="Header row">
 
-            <div className="col s12 m6 left">
+            <div className="col s12 m7 left">
                { left_links.map((link,i) => this.renderLink(link,i) ) }
             </div>
 
-            <div className="col s12 m6 right">
+            <div className="col s12 m5 right">
                { right_links.map((link,i) => this.renderLink(link,i) ) }
             </div>
 

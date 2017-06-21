@@ -9,10 +9,10 @@ class Section extends Component {
          <div id={this.props.id} className="Section row">
 
                <div className="col s12 m8 l5">
-                  <Chat messages={messages} />
+                  <Chat id={this.props.id} messages={messages} />
                </div>
                <div className="col s12 m12 l7">
-                  <Animation />
+                  <Animation id={this.props.id} />
                </div>
 
          </div>
