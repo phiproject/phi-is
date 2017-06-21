@@ -268,7 +268,7 @@ p {
 .Chat {
   text-align: left;
 }
-.chat-message {
+.message {
   margin: 0 0 1em 0;
   padding: 1em;
   border-radius: 5px;
@@ -282,7 +282,37 @@ p {
   color: #fff;
 }
 .Footer {
-  text-align: center;
+  margin-bottom: 3em;
+  padding: 1em;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+.footer__box {
+  text-align: left;
+}
+.footer__box__title {
+  text-decoration: underline;
+}
+.footer__link {
+  margin-right: 1em;
+}
+.footer__link a {
+  color: #fff;
+}
+.footer__person {
+  margin: 0.25em 0 0 0;
+  display: block;
+}
+.footer__person a {
+  -webkit-transition: all 75ms ease-in-out;
+  transition: all 75ms ease-in-out;
+  color: #2993fc;
+}
+.footer__person a:hover {
+  color: #0367ca;
+}
+.footer__person__job {
+  margin-left: 0.5em;
+  font-style: italic;
 }
 .Header {
   text-align: center;
@@ -303,8 +333,8 @@ p {
   padding: 0;
 }
 .header__link a {
-  -webkit-transition: all 100ms ease-in-out;
-  transition: all 100ms ease-in-out;
+  -webkit-transition: all 75ms ease-in-out;
+  transition: all 75ms ease-in-out;
   color: #fff;
   padding: 0.75em;
 }

@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 class Chat extends Component {
 
   renderMessage = (message, i) => (
-    <div key={i} className="chat-message"> <span>{ message }</span> </div>
+    <div key={i} className="message chat-message"> <span>{ message }</span> </div>
   )
 
   render() {

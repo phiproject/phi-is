@@ -5,7 +5,11 @@ class Header extends Component {
    // renderSpacer = (link,i) => <span className="header__spacer">|</span>
 
    renderLink = (link,i) => (
-      <span className="header__link"><a key={i} href={link.url} target={link.target}><span>{link.title}</span></a></span>
+      <span key={i} className="header__link">
+         <a href={link.url} target={link.target}>
+            <span>{link.title}</span>
+         </a>
+      </span>
    )
 
    render() {

@@ -28,7 +28,7 @@
             "url":""
          },
          {
-            "title":"Russian",
+            "title":"Русский",
             "url":"/ru/"
          }
       ]
@@ -42,7 +42,6 @@
       ]
    },
    "footer":{
-      "sections":[],
       "description":"Phi was developed as part of the New Normal education programme at Strelka Institute for Media, Architecture and Design",
       "team_title": "Team Members",
       "team":[
@@ -76,16 +75,16 @@
       "developers":[
          {
             "name":"Alexander Ayoupov",
-            "job":"Simulation developer",
+            "job":"Simulation",
             "url":""
          },
          {
             "name":"Dan McHugh",
-            "job":"Website developer",
+            "job":"Website",
             "url":"https://danmchugh.co.uk"
          }
       ],
-      "urls":[
+      "text_links":[
          {
             "title": "Pink Paper",
             "url": ""
@@ -99,11 +98,11 @@
             "url": "/en/"
          },
          {
-            "title": "Russian",
+            "title": "Русский",
             "url": "/ru/"
          }
       ],
-      "image_urls":[]
+      "image_links":[]
    },
    "sections":[
       {
@@ -149,6 +148,16 @@
             "Codify and incentivise social relationships through renewable energy",
             "The transition from fossil fuels requires radically new ways of organizing society",
             "Phi re-establishes social obligation in the context of 'trustless' blockchain networks"
+         ],
+         "animation":""
+      },
+      {
+         "id": "contact",
+         "chat":[
+            "Get in touch",
+            "Say hi to contact@phi.is",
+            "Join our slack at phiprojectteam.slack.com",
+            "Develop phi together: gitub.com/srelka-2017/phi"
          ],
          "animation":""
       }

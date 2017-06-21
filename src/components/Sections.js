@@ -5,7 +5,7 @@ class Section extends Component {
    render() {
       const messages = this.props.chat
       return (
-         <div className="Section">
+         <div id={this.props.id} className="Section">
             <div className="w-1of3">
                <Chat messages={messages} />
             </div>
