@@ -7,9 +7,9 @@ import Sections from './Sections'
 import Footer from './Footer'
 
 // Import Animation timline controls
-import Rellax from 'rellax'
 // import { TimelineMax } from 'gsap'
-// import * as ScrollMagic from 'scrollmagic'
+import ScrollMagic from 'scrollmagic'
+import Rellax from 'rellax'
 
 // Import Languages
 import en from '../languages/en.json'
@@ -28,30 +28,40 @@ class App extends Component {
     const languageRequest = this.props.match.params.language
     this.lang = (languageRequest) ? languageRequest : languageDefault
     this.data = languages[this.lang]
-    // window.controller = new ScrollMagic.Controller(); // shouldn't do this in react, but the scope is too small, and it's only one page.
+
+    // Setup controller for scroll animations
+    this.controller = new ScrollMagic.Controller();
   }
 
   componentDidMount() {
-    const rellax = new Rellax('.rellax',{center: true});
+    // Setup parallax scrolling - use .rellax on elements
+    this.rellax = new Rellax('.rellax',{center: true});
   }
 
   render() {
     return (
       <div className="App">
-        <div
-          className="bg-grid Xrellax"
-          // data-rellax-speed="150"
-          // data-rellax-percentage="0.5"
-        ></div>
-        <div
-          className="bg-mountains rellax"
-          data-rellax-speed="1500"
-        ></div>
 
-          <Header data={this.data.header} />
-          <Hero data={this.data.hero} />
-          <Sections data={this.data.sections} />
-          <Footer data={this.data.footer} />
+        {/* Background Layers */}
+        <div className="bg-gradient" id="gradient"></div>
+        <div className="bg-gradient bg-gradient-hide bg-gradient-about"></div>
+        <div className="bg-gradient bg-gradient-hide bg-gradient-create"></div>
+        <div className="bg-gradient bg-gradient-hide bg-gradient-simulate"></div>
+        <div className="bg-gradient bg-gradient-hide bg-gradient-invest"></div>
+        <div className="bg-gradient bg-gradient-hide bg-gradient-reorganize"></div>
+        <div className="bg-gradient bg-gradient-hide bg-gradient-contact"></div>
+
+        <div className="bg-grid"></div>
+        <div className="bg-mountains rellax" data-rellax-speed="1500"></div>
+
+        {/* Page Components
+          - pass controller to anything with a timeline
+          - pass data to anything with text - will automatically handle language
+        */}
+        <Header data={this.data.header} />
+        <Hero data={this.data.hero} />
+        <Sections data={this.data.sections} controller={this.controller} />
+        <Footer data={this.data.footer} />
 
       </div>
     );

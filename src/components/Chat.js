@@ -1,40 +1,56 @@
 import React, { Component } from 'react'
 import { TimelineMax, Sine, Back } from 'gsap'
-import Waypoint from 'react-waypoint'
+// import Waypoint from 'react-waypoint'
+import { randomInt } from '../helpers'
+import ScrollMagic from 'scrollmagic'
+import 'animation.gsap'
+import 'debug.addIndicators'
 
-function appear(id) {
-  // let elements = ["#"+id+"-0", "#"+id+"-1", "#"+id+"-2"]
+function appear(id, section) {
   let elements = document.getElementById(id).getElementsByClassName('message')
-  return new TimelineMax({ paused: true })
+  console.log('.bg-gradient-'+section);
+  return new TimelineMax()
   .staggerFrom(elements,0.3,{
-   //  css: {
-   //    transform: 'translateX(-20px)',
-   //    opacity: 0
-   //  },
-    delay: 1,
+    css: {
+      transform: 'translateX(-50px)',
+      opacity: 0
+    },
     ease: Back.easeOut
-  }, 1)
+  },0.5)
+  .to('.bg-gradient-'+section,1,{
+    opacity: 1,
+    ease: Sine.easeInOut
+  },0)
 }
+
+// function changeGradient(id) {
+//   return new TimelineMax()
+//   .to('#gradient',0.3,{
+//     className: '+=bg-gradient-1',
+//     ease: Back.easeOut
+//   })
+// }
 
 class Chat extends Component {
 
   componentWillMount() {
     // Setup object id, and a place to store animations
     this.id = this.props.id+'-chat'
+    this.container = this.props.id+'-container'
     this.anims = {}
   }
 
   componentDidMount() {
     // Setup animations once the component is actually in scope
-    this.anims.enter = appear(this.id)
-  }
+   //  this.anims.enter = appear(this.id)
 
-  waypointEnter = () => {
-    this.anims.enter.play()
-  }
+   const tween = appear(this.id, this.props.id)
 
-  waypointLeave = () => {
-    // this.anims.enter.pause(0, true) // resets animation timeline
+   const scene = new ScrollMagic
+   .Scene({triggerElement: "#"+this.props.id, duration: 200})
+   .setTween(tween)
+   .addIndicators()
+   .addTo(this.props.controller)
   }
 
 
@@ -45,11 +61,11 @@ class Chat extends Component {
   render() {
     const { messages } = this.props
     return (
-      <Waypoint onEnter={this.waypointEnter} onLeave={this.waypointLeave}>
+      // <Waypoint onEnter={this.waypointEnter} onLeave={this.waypointLeave}>
         <div id={this.id} className="Chat">
           { messages.map((m, i) => this.renderMessage(m, i)) }
         </div>
-      </Waypoint>
+      // </Waypoint>
     )
   }
 }

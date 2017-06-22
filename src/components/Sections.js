@@ -9,10 +9,16 @@ class Section extends Component {
          <div id={this.props.id} className="Section row">
 
                <div className="col s12 m8 l5">
-                  <Chat id={this.props.id} messages={messages} />
+                  <Chat
+                     id={this.props.id}
+                     messages={messages}
+                     controller={this.props.controller}
+                  />
                </div>
                <div className="col s12 m12 l7">
-                  <Animation id={this.props.id} />
+                  <Animation
+                     id={this.props.id} controller={this.props.controller}
+                  />
                </div>
 
          </div>
@@ -25,7 +31,7 @@ class Sections extends Component {
       const sections = this.props.data
       return (
          <div className="Sections">
-            { sections.map((data,i) => <Section key={i} {...data} /> ) }
+            { sections.map((data,i) => <Section key={i} {...data} controller={this.props.controller} /> ) }
          </div>
       )
    }

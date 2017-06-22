@@ -226,6 +226,7 @@ p {
   color: #fff;
 }
 .Animation {
+  border-radius: 5px;
   min-height: 400px;
   text-align: center;
   color: #fff;
@@ -246,7 +247,8 @@ p {
   text-align: center;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0.5em;
+  padding: 1em 0.5em 0.5em 0.5em;
+  border: 10px solid #fff;
 }
 @media only screen and (min-width: 601px) {
   .App {
@@ -258,15 +260,52 @@ p {
     padding: 3em;
   }
 }
+.bg-gradient {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#83d1eb), to(#be68a9));
+  background-image: linear-gradient(to bottom, #83d1eb, #be68a9);
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+.bg-gradient-hide {
+  opacity: 0;
+}
+.bg-gradient-about {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#be68a9), to(#ec3a74));
+  background-image: linear-gradient(to bottom, #be68a9, #ec3a74);
+}
+.bg-gradient-create {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ec3a74), to(#f49567));
+  background-image: linear-gradient(to bottom, #ec3a74, #f49567);
+}
+.bg-gradient-simulate {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f49567), to(#fbecb6));
+  background-image: linear-gradient(to bottom, #f49567, #fbecb6);
+}
+.bg-gradient-invest {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fbecb6), to(#64a8cb));
+  background-image: linear-gradient(to bottom, #fbecb6, #64a8cb);
+}
+.bg-gradient-reorganize {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#64a8cb), to(#c7717c));
+  background-image: linear-gradient(to bottom, #64a8cb, #c7717c);
+}
+.bg-gradient-contact {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#c7717c), to(#e02e3a));
+  background-image: linear-gradient(to bottom, #c7717c, #e02e3a);
+}
 .bg-grid {
   background-image: url("../images/grid.png");
   background-position: center center;
   position: fixed;
   left: 0;
   top: 0;
-  z-index: -1;
   height: 100%;
   width: 100%;
+  z-index: -1;
   opacity: 0.5;
 }
 .bg-mountains {
@@ -276,10 +315,10 @@ p {
   background-size: 100% auto;
   position: fixed;
   left: 0;
-  top: -1000px;
-  z-index: -1;
+  top: -700px;
   height: 4000px;
   width: 100%;
+  z-index: -1;
   opacity: 0.5;
 }
 .Chat {
@@ -374,6 +413,12 @@ p {
   text-align: center;
 }
 .Section {
-  margin: 0 0 15em 0;
-  padding: 5em 0 0 0;
+  margin: 0 0 3em 0;
+  padding: 12em 0 0 0;
+}
+.Section:first-child {
+  margin-top: -5em;
+}
+.Section:last-child {
+  margin-bottom: 10em;
 }
