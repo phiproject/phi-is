@@ -38,11 +38,21 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="bg-grid rellax" data-rellax-speed="150" data-rellax-percentage="0.5"></div>
-        <Header data={this.data.header} />
-        <Hero data={this.data.hero} />
-        <Sections data={this.data.sections} />
-        <Footer data={this.data.footer} />
+        <div
+          className="bg-grid Xrellax"
+          // data-rellax-speed="150"
+          // data-rellax-percentage="0.5"
+        ></div>
+        <div
+          className="bg-mountains Xrellax"
+          // data-rellax-speed="-2"
+        ></div>
+
+          <Header data={this.data.header} />
+          <Hero data={this.data.hero} />
+          <Sections data={this.data.sections} />
+          <Footer data={this.data.footer} />
+
       </div>
     );
   }

@@ -1,0 +1,12 @@
+TODO
+
+1. Write data structure: header, footer, menus, sections, chat-text, page-meta
+2. Structure for languages: english, russian
+3. Responsive page layout: css grid, breakpoints, use skel? or something else
+4. Write page components: logo, menu, page-section, chat-section, animation-section, info-section, image-link, credits
+5. Plan out each animation-section: js + css (use gsap?)
+6. Plan out scroll trigger points: back and forwards
+7. 404 redirect
+8. SEO
+9. Figure out deployment
+10. Figure out content maintenance

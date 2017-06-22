@@ -17,7 +17,7 @@ class Header extends Component {
       return (
          <div className="Header row">
 
-            <div className="col s12 m7 left">
+            <div className="col s-hide m7 left">
                { left_links.map((link,i) => this.renderLink(link,i) ) }
             </div>
 
