@@ -44,8 +44,8 @@ class App extends Component {
           // data-rellax-percentage="0.5"
         ></div>
         <div
-          className="bg-mountains Xrellax"
-          // data-rellax-speed="-2"
+          className="bg-mountains rellax"
+          data-rellax-speed="1500"
         ></div>
 
           <Header data={this.data.header} />
