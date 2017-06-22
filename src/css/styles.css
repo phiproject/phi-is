@@ -261,7 +261,7 @@ p {
 .bg-grid {
   background-image: url("../images/grid.png");
   background-position: center center;
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   z-index: -1;
@@ -291,12 +291,12 @@ p {
   border-radius: 5px;
   width: auto !important;
   background-color: #fff;
-  color: #2993fc;
+  color: #444896;
   display: inline-block;
   font-size: 18px;
 }
 .chat-message:first-child {
-  background-color: #2993fc;
+  background-color: #444896;
   color: #fff;
 }
 .footer__box {
@@ -319,10 +319,10 @@ p {
 .footer__person a {
   -webkit-transition: all 75ms ease-in-out;
   transition: all 75ms ease-in-out;
-  color: #2993fc;
+  color: #444896;
 }
 .footer__person a:hover {
-  color: #0367ca;
+  color: #303269;
 }
 .footer__person__job {
   margin-left: 0.5em;
@@ -354,7 +354,7 @@ p {
   padding: 0.75em;
 }
 .header__link a:hover {
-  background-color: #2993fc;
+  background-color: #444896;
 }
 .Hero {
   min-height: 400px;

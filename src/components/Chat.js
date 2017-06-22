@@ -7,10 +7,10 @@ function appear(id) {
   let elements = document.getElementById(id).getElementsByClassName('message')
   return new TimelineMax({ paused: true })
   .staggerFrom(elements,0.3,{
-    css: {
-      transform: 'translateX(-20px)',
-      opacity: 0
-    },
+   //  css: {
+   //    transform: 'translateX(-20px)',
+   //    opacity: 0
+   //  },
     delay: 1,
     ease: Back.easeOut
   }, 1)

@@ -11,10 +11,10 @@ function appear(id,id2) {
   let rotation = randomInt(0,180)
   return new TimelineMax({ paused: true })
   .from("#"+id2+'-container',1,{
-    css: {
-      transform: 'translateY(200px)',
-      opacity: 0,
-    },
+    // css: {
+    //   transform: 'translateY(200px)',
+    //   opacity: 0,
+    // },
     delay: 1,
     ease: Sine.easeInOut
   },0)
