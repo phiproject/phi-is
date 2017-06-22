@@ -7,6 +7,7 @@ import Sections from './Sections'
 import Footer from './Footer'
 
 // Import Animation timline controls
+import Rellax from 'rellax'
 // import { TimelineMax } from 'gsap'
 // import * as ScrollMagic from 'scrollmagic'
 
@@ -30,10 +31,14 @@ class App extends Component {
     // window.controller = new ScrollMagic.Controller(); // shouldn't do this in react, but the scope is too small, and it's only one page.
   }
 
+  componentDidMount() {
+    const rellax = new Rellax('.rellax',{center: true});
+  }
+
   render() {
     return (
       <div className="App">
-        <div className="bg-grid"></div>
+        <div className="bg-grid rellax" data-rellax-speed="150" data-rellax-percentage="0.5"></div>
         <Header data={this.data.header} />
         <Hero data={this.data.hero} />
         <Sections data={this.data.sections} />

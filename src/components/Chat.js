@@ -34,7 +34,7 @@ class Chat extends Component {
   }
 
   waypointLeave = () => {
-    this.anims.enter.pause(0, true) // resets animation timeline
+    // this.anims.enter.pause(0, true) // resets animation timeline
   }
 
 

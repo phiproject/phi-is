@@ -223,7 +223,6 @@ p {
   color: #fff;
 }
 .Animation {
-  background-color: #fd5e60;
   min-height: 400px;
   text-align: center;
   color: #fff;
@@ -258,10 +257,10 @@ p {
   background-image: url("../images/grid.png");
   background-position: center center;
   width: 100%;
-  height: 100%;
+  height: 4000px;
   position: fixed;
   opacity: 0.5;
-  top: 0;
+  bottom: -50%;
   left: 0;
   z-index: -1;
   pointer-events: none;
@@ -277,6 +276,7 @@ p {
   background-color: #fff;
   color: #2993fc;
   display: block;
+  font-size: 18px;
 }
 .chat-message:first-child {
   background-color: #2993fc;

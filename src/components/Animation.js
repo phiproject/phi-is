@@ -1,20 +1,32 @@
 import React, { Component } from 'react'
-import { TimelineMax, Sine } from 'gsap'
+import { TimelineMax, Sine, Quart } from 'gsap'
 import Waypoint from 'react-waypoint'
 import { randomInt } from '../helpers'
 
-function appear(id) {
+function appear(id,id2) {
   let time = randomInt(1,5)
   let scale = randomInt(1,4)
   let rotation = randomInt(0,180)
   return new TimelineMax({ paused: true })
+  .from("#"+id2+'-container',1.5,{
+    css: {
+      // transform: 'translateX(200px)',
+      opacity: 0,
+    },
+    delay: 0,
+    ease: Sine.easeInOut
+  },0)
   .to("#"+id,time,{
-    scale: scale,
-    rotation: rotation,
+    css: {
+      transform: 'scale('+scale+') rotate('+rotation+'deg)'
+    },
+    // scale: scale,
+    // rotation: rotation,
     repeat: -1,
     yoyo: true,
-    ease: Sine.easeInOut
-  })
+    delay: 0,
+    ease: Quart.easeOut
+  },0)
 }
 
 class Animation extends Component {
@@ -27,7 +39,7 @@ class Animation extends Component {
 
   componentDidMount() {
     // Setup animations once the component is actually in scope
-    this.anims.enter = appear(this.id)
+    this.anims.enter = appear(this.id, this.props.id)
   }
 
   waypointEnter = () => {
@@ -35,17 +47,19 @@ class Animation extends Component {
   }
 
   waypointLeave = () => {
-    this.anims.enter.pause(0, true) // resets animation timeline
+    this.anims.enter.reverse()//pause(0, true) // resets animation timeline
   }
 
   render() {
     return (
-      <div className="Animation">
+      <div id={`${this.props.id}-container`} className="Animation">
+        <div className="rellax" data-rellax-speed="10" data-rellax-percentage="0.5">
         <Waypoint onEnter={this.waypointEnter} onLeave={this.waypointLeave}>
           <div id={this.id}>
             Animation here
           </div>
         </Waypoint>
+        </div>
       </div>
     );
   }
