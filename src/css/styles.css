@@ -258,11 +258,13 @@ p {
   stroke-width: 4px;
 }
 .App {
+  position: relative;
   text-align: center;
   max-width: 1400px;
   margin: 0 auto;
   padding: 1em 0.5em 0.5em 0.5em;
   border: 10px solid #fff;
+  overflow: hidden;
 }
 @media only screen and (min-width: 601px) {
   .App {
@@ -274,10 +276,21 @@ p {
     padding: 3em;
   }
 }
+.bg-gradients {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#83d1eb), color-stop(#be68a9), color-stop(#ec3a74), color-stop(#f49567), color-stop(#be68a9), color-stop(#fbecb6), color-stop(#64a8cb), color-stop(#c7717c), color-stop(#b84069), to(#8e549c));
+  background-image: linear-gradient(to bottom, #83d1eb, #be68a9, #ec3a74, #f49567, #be68a9, #fbecb6, #64a8cb, #c7717c, #b84069, #8e549c);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
 .bg-gradient {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#83d1eb), to(#be68a9));
   background-image: linear-gradient(to bottom, #83d1eb, #be68a9);
   position: fixed;
+  display: block;
   left: 0;
   top: 0;
   height: 100%;
@@ -286,6 +299,10 @@ p {
 }
 .bg-gradient-hide {
   opacity: 0;
+}
+.bg-gradient-header {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#83d1eb), to(#be68a9));
+  background-image: linear-gradient(to bottom, #83d1eb, #be68a9);
 }
 .bg-gradient-about {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#be68a9), to(#ec3a74));

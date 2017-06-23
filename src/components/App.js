@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Settings from '../settings'
 
 // Import Page Components
 import Header from './Header'
@@ -35,7 +36,9 @@ class App extends Component {
 
   componentDidMount() {
     // Setup parallax scrolling - use .rellax on elements
-    this.rellax = new Rellax('.rellax',{center: true});
+    if (Settings.animation.on && Settings.animation.parallax) {
+      this.rellax = new Rellax('.rellax',{center: true});
+    }
   }
 
   render() {
@@ -43,14 +46,15 @@ class App extends Component {
       <div className="App">
 
         {/* Background Layers */}
-        <div className="bg-gradient" id="gradient"></div>
-        <div className="bg-gradient bg-gradient-hide bg-gradient-about"></div>
-        <div className="bg-gradient bg-gradient-hide bg-gradient-create"></div>
-        <div className="bg-gradient bg-gradient-hide bg-gradient-simulate"></div>
-        <div className="bg-gradient bg-gradient-hide bg-gradient-invest"></div>
-        <div className="bg-gradient bg-gradient-hide bg-gradient-reorganize"></div>
-        <div className="bg-gradient bg-gradient-hide bg-gradient-contact"></div>
-
+        <div className="bg-gradients">
+          <div className="bg-gradient bg-gradient-hide bg-gradient-header" id="gradient"></div>
+          <div className="bg-gradient bg-gradient-hide bg-gradient-about"></div>
+          <div className="bg-gradient bg-gradient-hide bg-gradient-create"></div>
+          <div className="bg-gradient bg-gradient-hide bg-gradient-simulate"></div>
+          <div className="bg-gradient bg-gradient-hide bg-gradient-invest"></div>
+          <div className="bg-gradient bg-gradient-hide bg-gradient-reorganize"></div>
+          <div className="bg-gradient bg-gradient-hide bg-gradient-contact"></div>
+        </div>
         <div className="bg-grid"></div>
         <div className="bg-mountains rellax" data-rellax-speed="1500"></div>
 

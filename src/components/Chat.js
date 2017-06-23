@@ -1,35 +1,41 @@
 import React, { Component } from 'react'
+import Settings from '../settings'
+
 import { TimelineMax, Sine, Back } from 'gsap'
-// import Waypoint from 'react-waypoint'
-import { randomInt } from '../helpers'
 import ScrollMagic from 'scrollmagic'
 import 'animation.gsap'
 import 'debug.addIndicators'
 
+
 function appear(id, section) {
-  let elements = document.getElementById(id).getElementsByClassName('message')
-  console.log('.bg-gradient-'+section);
-  return new TimelineMax()
-  .staggerFrom(elements,0.5,{
-    css: {
-      transform: 'translateX(-50px)',
-      opacity: 0
-    },
-    ease: Back.easeOut
-  },0.75)
-  .to('.bg-gradient-'+section,1,{
-    opacity: 1,
-    ease: Sine.easeInOut
-  },0)
+  // Setup timeline
+  const tl = new TimelineMax()
+
+  // Chat stagger animation
+  if (Settings.animation.chat) {
+    let elements = document.getElementById(id).getElementsByClassName('message')
+    tl.staggerFrom(elements,0.5,{
+      css: {
+        transform: 'translateX(-50px)',
+        opacity: 0
+      },
+      ease: Back.easeOut
+    },0.75)
+  }
+
+  // Fade background gradients
+  if (Settings.animation.gradients) {
+    tl.to('.bg-gradient-'+section,1,{
+      css: {
+        opacity: 1,
+      },
+      ease: Sine.easeInOut
+    },0)
+  }
+
+  return tl
 }
 
-// function changeGradient(id) {
-//   return new TimelineMax()
-//   .to('#gradient',0.3,{
-//     className: '+=bg-gradient-1',
-//     ease: Back.easeOut
-//   })
-// }
 
 class Chat extends Component {
 
@@ -37,20 +43,22 @@ class Chat extends Component {
     // Setup object id, and a place to store animations
     this.id = this.props.id+'-chat'
     this.container = this.props.id+'-container'
-    this.anims = {}
   }
 
   componentDidMount() {
     // Setup animations once the component is actually in scope
-   //  this.anims.enter = appear(this.id)
+    if (Settings.animation.on && Settings.animation.scroll) {
+      const tween = appear(this.id, this.props.id)
 
-   const tween = appear(this.id, this.props.id)
+      const scene = new ScrollMagic
+      .Scene({triggerElement: "#"+this.props.id, duration: 200})
+      .setTween(tween)
+      .addTo(this.props.controller)
 
-   const scene = new ScrollMagic
-   .Scene({triggerElement: "#"+this.props.id, duration: 200})
-   .setTween(tween)
-  //  .addIndicators()
-   .addTo(this.props.controller)
+      if (Settings.animation.scroll_indicators) {
+        scene.addIndicators()
+      }
+    }
   }
 
 

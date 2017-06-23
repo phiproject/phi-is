@@ -1,10 +1,12 @@
 .App
    // min-height 100%
+   position relative
    text-align center
    max-width 1400px
    margin 0 auto
    padding 1em 0.5em 0.5em 0.5em
    border 10px solid white
+   overflow hidden
 
    @media only screen and (min-width: 601px)
       padding 2em
@@ -12,9 +14,19 @@
    @media only screen and (min-width: 993px)
       padding 3em
 
+.bg-gradients
+   background-image linear-gradient(to bottom, bg_blue, bg_purple, bg_pink, bg_peach, bg_purple, bg_yellow, bg_aqua, bg_plum, bg_vimto, bg_purple2)
+   position absolute
+   top 0
+   left 0
+   width 100%
+   height 100%
+   z-index -1
+
 .bg-gradient
    background-image linear-gradient(to bottom, bg_blue, bg_purple)
    position fixed
+   display block
    left 0
    top 0
    height 100%
@@ -23,6 +35,9 @@
 
 .bg-gradient-hide
    opacity 0
+
+.bg-gradient-header
+   background-image linear-gradient(to bottom, bg_blue, bg_purple)
 
 .bg-gradient-about
    background-image linear-gradient(to bottom, bg_purple, bg_pink)
