@@ -10,13 +10,13 @@ function appear(id, section) {
   let elements = document.getElementById(id).getElementsByClassName('message')
   console.log('.bg-gradient-'+section);
   return new TimelineMax()
-  .staggerFrom(elements,0.3,{
+  .staggerFrom(elements,0.5,{
     css: {
       transform: 'translateX(-50px)',
       opacity: 0
     },
     ease: Back.easeOut
-  },0.5)
+  },0.75)
   .to('.bg-gradient-'+section,1,{
     opacity: 1,
     ease: Sine.easeInOut
