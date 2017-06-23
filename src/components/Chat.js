@@ -49,7 +49,7 @@ class Chat extends Component {
    const scene = new ScrollMagic
    .Scene({triggerElement: "#"+this.props.id, duration: 200})
    .setTween(tween)
-   .addIndicators()
+  //  .addIndicators()
    .addTo(this.props.controller)
   }
 

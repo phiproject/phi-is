@@ -243,6 +243,20 @@ p {
 .cropImg {
   margin: -20% 0;
 }
+.diagram__simulate {
+  position: relative;
+  width: 100%;
+}
+.diagram__simulate img {
+  width: 100%;
+}
+.diagram-absolute {
+  position: absolute;
+}
+.svgline {
+  stroke: #88ce02;
+  stroke-width: 4px;
+}
 .App {
   text-align: center;
   max-width: 1400px;
@@ -294,8 +308,12 @@ p {
   background-image: linear-gradient(to bottom, #64a8cb, #c7717c);
 }
 .bg-gradient-contact {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#c7717c), to(#e02e3a));
-  background-image: linear-gradient(to bottom, #c7717c, #e02e3a);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#c7717c), to(#b84069));
+  background-image: linear-gradient(to bottom, #c7717c, #b84069);
+}
+.bg-gradient-footer {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#b84069), to(#8e549c));
+  background-image: linear-gradient(to bottom, #b84069, #8e549c);
 }
 .bg-grid {
   background-image: url("../images/grid.png");
@@ -349,7 +367,14 @@ p {
   margin-right: 1em;
 }
 .footer__link a {
+  -webkit-transition: all 75ms ease-in-out;
+  transition: all 75ms ease-in-out;
   color: #fff;
+  border-radius: 5px;
+  padding: 0.75em;
+}
+.footer__link a:hover {
+  background-color: #444896;
 }
 .footer__person {
   margin: 0.25em 0 0 0;
@@ -361,7 +386,8 @@ p {
   color: #444896;
 }
 .footer__person a:hover {
-  color: #303269;
+  color: #5e63b6;
+  margin-left: 5px;
 }
 .footer__person__job {
   margin-left: 0.5em;
@@ -390,6 +416,7 @@ p {
   -webkit-transition: all 75ms ease-in-out;
   transition: all 75ms ease-in-out;
   color: #fff;
+  border-radius: 5px;
   padding: 0.75em;
 }
 .header__link a:hover {
