@@ -41,7 +41,7 @@
          {
             "title":"Pink Paper",
             "subtitle":"Read the",
-            "alt":"",
+            "alt":"Click to read the Pink Paper",
             "target":"",
             "url":"",
             "type":""
@@ -49,7 +49,7 @@
          {
             "title":"Simulator",
             "subtitle":"Use Phi",
-            "alt":"",
+            "alt":"Click to use the Phi Simulator",
             "target":"",
             "url":"",
             "type":"alt"
@@ -125,8 +125,7 @@
          "chat":[
             "What is Phi?",
             "Phi is a simulation environment that enables people to explore the potential effects of decentralised energy, currency, and governence on their lives."
-         ],
-         "animation":""
+         ]
       },
       {
          "id": "create",
@@ -135,8 +134,7 @@
             "Phi enables you to develop the conditions for renewable energy in a community-based fashion",
             "The Phi ENV interface offers tools for designing smart contracts, managing tokenized assets, and visualising energy transactions recorded on a public blockchain.",
             "..."
-         ],
-         "animation":""
+         ]
       },
       {
          "id": "simulate",
@@ -145,16 +143,14 @@
             "We believe that simulation should play a crucial role in shaping the future of blockchain networks",
             "Phi Sim allows you to test peer-to-peer networks in real-time data conditions",
             "..."
-         ],
-         "animation":""
+         ]
       },
       {
          "id": "invest",
          "chat":[
             "Invest in peer-to-peer structure.",
             "After a creation phase, Phi will become a self-governing organisation to facilitate financial, technical and social investment in renewable energy and biosensing."
-         ],
-         "animation":""
+         ]
       },
       {
          "id": "reorganize",
@@ -163,8 +159,7 @@
             "Codify and incentivise social relationships through renewable energy",
             "The transition from fossil fuels requires radically new ways of organizing society",
             "Phi re-establishes social obligation in the context of 'trustless' blockchain networks"
-         ],
-         "animation":""
+         ]
       },
       {
          "id": "contact",
@@ -173,8 +168,7 @@
             "Say hi to contact@phi.is",
             "Join our slack at phiprojectteam.slack.com",
             "Develop phi together: gitub.com/srelka-2017/phi"
-         ],
-         "animation":""
+         ]
       }
    ]
 }
