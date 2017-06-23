@@ -170,16 +170,9 @@ html {
 }
 body {
   position: relative;
-  border: 10px solid #fff;
 }
 img {
   max-width: 100%;
-}
-@import url("https://fonts.googleapis.com/css?family=Nunito");
-html {
-  font-family: Nunito;
-  font-size: 16px;
-  font-family: sans-serif;
 }
 .center {
   text-align: center;
@@ -198,6 +191,12 @@ html {
 }
 .inline-block {
   display: inline-block;
+}
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+html {
+  font-family: Nunito;
+  font-size: 16px;
+  font-family: sans-serif;
 }
 a {
   text-decoration: none;
@@ -226,8 +225,12 @@ p {
   line-height: 1.5;
   color: #fff;
 }
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#83d1eb), to(#be68a9));
+  background: linear-gradient(to bottom, #83d1eb, #be68a9);
+  border: 10px solid #fff;
+}
 .Animation {
-  border-radius: 5px;
   min-height: 400px;
   text-align: center;
   color: #fff;
@@ -241,20 +244,17 @@ p {
       -ms-flex-align: center;
           align-items: center;
 }
-.cropImg {
-  margin: -20% 0;
-}
-.diagram__simulate {
+.diagram {
   position: relative;
   width: 100%;
 }
-.diagram__simulate img {
+.diagram img {
   width: 100%;
 }
 .diagram-absolute {
   position: absolute;
 }
-.svgline {
+.simulate-line {
   stroke: #88ce02;
   stroke-width: 4px;
 }

@@ -41,11 +41,13 @@ class App extends Component {
     }
   }
 
+
   render() {
     return (
       <div className="App">
 
         {/* Background Layers */}
+        { Settings.background.gradients &&
         <div className="bg-gradients">
           <div className="bg-gradient bg-gradient-hide bg-gradient-header" id="gradient"></div>
           <div className="bg-gradient bg-gradient-hide bg-gradient-about"></div>
@@ -54,9 +56,9 @@ class App extends Component {
           <div className="bg-gradient bg-gradient-hide bg-gradient-invest"></div>
           <div className="bg-gradient bg-gradient-hide bg-gradient-reorganize"></div>
           <div className="bg-gradient bg-gradient-hide bg-gradient-contact"></div>
-        </div>
-        <div className="bg-grid"></div>
-        <div className="bg-mountains rellax" data-rellax-speed="1500"></div>
+        </div> }
+        { Settings.background.grid && <div className="bg-grid"></div> }
+        { Settings.background.mountains && <div className="bg-mountains rellax" data-rellax-speed="1500"></div> }
 
         {/* Page Components
           - pass controller to anything with a timeline

@@ -10,12 +10,17 @@ const window_width = window.innerWidth
 const mobile_width = 600
 
 const Settings = {
+   background: {
+      mountains: true,
+      grid: true,
+      gradients: true
+   },
    animation: {
       // Allow animations for larger devices
       on: ( window_width > mobile_width ) ? true : false,
       // Main page animations
       gradients: true,
-      parallax: true,
+      parallax: false,
       scroll: true,
       scroll_indicators: false,
       // Section animations

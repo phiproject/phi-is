@@ -10,3 +10,5 @@ TODO
 8. SEO
 9. Figure out deployment
 10. Figure out content maintenance
+
+11. Server routing to main index file - /ru/ ends up at a 404

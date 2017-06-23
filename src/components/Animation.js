@@ -15,12 +15,11 @@ import Reorganize from './diagrams/Reorganize'
 import Contact from './diagrams/Contact'
 
 
-function appear(id, section) {
+function appear(id) {
   return new TimelineMax()
   .from("#"+id,1,{
     css: {
       transform: 'translateY(100px)',
-      // transform: 'scale(0.4)',
       opacity: 0,
     },
     ease: Quart.easeInOut
@@ -31,18 +30,17 @@ class Animation extends Component {
 
   componentWillMount() {
     // Setup object id, and a place to store animations
-    this.id = this.props.id+'-anim'
-    this.container = this.props.id+'-container'
+    this.section = this.props.section
+    this.id = this.section+'-animation'
   }
 
   componentDidMount() {
     // Setup animations once the component is actually in scope
     if (Settings.animation.on && Settings.animation.scroll) {
-      const tween = appear(this.id, this.props.id)
+      const tween = appear(this.id)
       const scene = new ScrollMagic
-      .Scene({triggerElement: "#"+this.props.id, duration: 400})
+      .Scene({triggerElement: "#"+this.section, duration: 400})
       .setTween(tween)
-      // .setPin("#"+this.id)
       .addTo(this.props.controller)
 
       if (Settings.animation.scroll_indicators) {
@@ -51,26 +49,23 @@ class Animation extends Component {
     }
   }
 
-  renderDiagram = (id) => {
+  renderDiagram = (section) => {
     // Simple Object to switch which diagram is needed from the section id
     const diagrams = {
-      'about': <About id={id} />,
-      'create': <Create id={id} />,
-      'simulate': <Simulate id={id} />,
-      'invest': <Invest id={id} />,
-      'reorganize': <Reorganize id={id} />,
-      'contact': <Contact id={id} />,
+      'about': <About section={section} />,
+      'create': <Create section={section} />,
+      'simulate': <Simulate section={section} />,
+      'invest': <Invest section={section} />,
+      'reorganize': <Reorganize section={section} />,
+      'contact': <Contact section={section} />,
     }
-    return diagrams[id]
+    return diagrams[section]
   }
-
 
   render() {
     return (
-      <div id={`${this.props.id}-container`} className="Animation">
-          <div id={this.id}>
-            { this.renderDiagram(this.props.id) }
-          </div>
+      <div id={this.id} className="Animation">
+        { this.renderDiagram(this.section) }
       </div>
     );
   }

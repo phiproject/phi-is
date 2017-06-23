@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Settings from '../settings'
 
-import { TimelineMax, TweenLite, Sine, Back } from 'gsap'
+import { TimelineMax, TweenLite, Sine } from 'gsap'
 import ScrollMagic from 'scrollmagic'
 import 'animation.gsap'
 import 'debug.addIndicators'
@@ -14,12 +14,12 @@ function appear(id, section) {
   // Chat stagger animation
   if (Settings.animation.chat) {
     let elements = document.getElementById(id).getElementsByClassName('message')
-    tl.staggerFrom(elements,0.5,{
+    tl.staggerFrom(elements,1.5,{
       css: {
-        transform: 'translateX(-50px)',
+      //   transform: 'translateY(50px)',
         opacity: 0
       },
-      ease: Back.easeOut
+      ease: Sine.easeOut
     },0.75)
   }
 
@@ -42,17 +42,17 @@ class Chat extends Component {
 
   componentWillMount() {
     // Setup object id, and a place to store animations
-    this.id = this.props.id+'-chat'
-    this.container = this.props.id+'-container'
+    this.section = this.props.section
+    this.id = this.section+'-chat'
+    this.animate = null
   }
 
   componentDidMount() {
     // Setup animations once the component is actually in scope
     if (Settings.animation.on && Settings.animation.scroll) {
-      const tween = appear(this.id, this.props.id)
-
+      const tween = appear(this.id, this.section)
       const scene = new ScrollMagic
-      .Scene({triggerElement: "#"+this.props.id, duration: 200})
+      .Scene({triggerElement: "#"+this.section, duration: 200})
       .setTween(tween)
       .addTo(this.props.controller)
 
@@ -70,11 +70,9 @@ class Chat extends Component {
   render() {
     const { messages } = this.props
     return (
-      // <Waypoint onEnter={this.waypointEnter} onLeave={this.waypointLeave}>
-        <div id={this.id} className="Chat">
-          { messages.map((m, i) => this.renderMessage(m, i)) }
-        </div>
-      // </Waypoint>
+      <div id={this.id} className="Chat">
+        { messages.map((m, i) => this.renderMessage(m, i)) }
+      </div>
     )
   }
 }
