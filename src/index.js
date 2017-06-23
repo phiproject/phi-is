@@ -4,7 +4,6 @@ import { BrowserRouter, Route } from 'react-router-dom' // , Miss
 import registerServiceWorker from './registerServiceWorker'
 
 // Import styles
-// import './css/vendor/materialize-grid.css'
 import './css/styles.css'
 
 // Import pages to send to routes

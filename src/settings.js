@@ -16,8 +16,8 @@ const Settings = {
       scroll: true,
       scroll_indicators: false,
       // Section animations
-      chat: false,
-      diagrams: true, // set to false to disable all diagram animations, individual on/off below
+      chat: true,
+      diagrams: true, // enable/disable all diagram animations
       diagram: {
          about: true,
          create: true,

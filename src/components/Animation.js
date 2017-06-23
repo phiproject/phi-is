@@ -6,7 +6,13 @@ import ScrollMagic from 'scrollmagic'
 import 'animation.gsap'
 import 'debug.addIndicators'
 
+// Import diagrams
+import About from './diagrams/About'
+import Create from './diagrams/Create'
 import Simulate from './diagrams/Simulate'
+import Invest from './diagrams/Invest'
+import Reorganize from './diagrams/Reorganize'
+import Contact from './diagrams/Contact'
 
 
 function appear(id, section) {
@@ -31,7 +37,6 @@ class Animation extends Component {
 
   componentDidMount() {
     // Setup animations once the component is actually in scope
-
     if (Settings.animation.on && Settings.animation.scroll) {
       const tween = appear(this.id, this.props.id)
       const scene = new ScrollMagic
@@ -44,7 +49,19 @@ class Animation extends Component {
         scene.addIndicators()
       }
     }
+  }
 
+  renderDiagram = (id) => {
+    // Simple Object to switch which diagram is needed from the section id
+    const diagrams = {
+      'about': <About id={id} />,
+      'create': <Create id={id} />,
+      'simulate': <Simulate id={id} />,
+      'invest': <Invest id={id} />,
+      'reorganize': <Reorganize id={id} />,
+      'contact': <Contact id={id} />,
+    }
+    return diagrams[id]
   }
 
 
@@ -52,13 +69,7 @@ class Animation extends Component {
     return (
       <div id={`${this.props.id}-container`} className="Animation">
           <div id={this.id}>
-
-            {/* Animation here */}
-            {/* <img src={imgCreate} className="cropImg" alt=""/> */}
-            {/* { imgCreate } */}
-
-            <Simulate id={this.props.id} />
-
+            { this.renderDiagram(this.props.id) }
           </div>
       </div>
     );

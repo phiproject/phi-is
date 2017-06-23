@@ -37,7 +37,7 @@ function animate(id) {
   })
 }
 
-class Simulate extends Component {
+class Contact extends Component {
 
   componentWillMount() {
     // Setup object id, and a place to store animations
@@ -47,7 +47,7 @@ class Simulate extends Component {
 
   componentDidMount() {
     // Setup animations once the component is actually in scope
-    if (Settings.animation.on && Settings.animation.diagrams && Settings.animation.diagram.simulate) {
+    if (Settings.animation.on && Settings.animation.diagrams && Settings.animation.diagram.contact) {
       animate(this.id)
     }
   }
@@ -82,4 +82,4 @@ class Simulate extends Component {
   }
 }
 
-export default Simulate;
+export default Contact;
