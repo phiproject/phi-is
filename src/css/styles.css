@@ -1,6 +1,7 @@
 /*
    This file will: compile all the style files to 'styles.css', and will apply auto-prfixers.
 */
+@import './vendor/materialize-grid.css';
 article,
 aside,
 details,
@@ -164,6 +165,12 @@ input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+html {
+  min-height: 100%;
+}
+body {
+  position: relative;
+}
 img {
   max-width: 100%;
 }
@@ -172,13 +179,6 @@ html {
   font-family: Nunito;
   font-size: 16px;
   font-family: sans-serif;
-  background-color: #83d1eb;
-  background: -webkit-gradient(linear, left top, left bottom, from(#83d1eb), to(#be68a9));
-  background: linear-gradient(to bottom, #83d1eb, #be68a9);
-  min-height: 100%;
-}
-body {
-  position: relative;
 }
 .center {
   text-align: center;

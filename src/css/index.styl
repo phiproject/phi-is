@@ -2,8 +2,17 @@
    This file will: compile all the style files to 'styles.css', and will apply auto-prfixers.
 */
 
-// 1. Import all base styles first - typography, normalize
-@require './_*.styl'
+// 1. Import vendor css first
+// - css dependencies for the app
+@import './vendor/materialize-grid.css'
 
-// 2. Import all component styles second - as they will require above
+// 2. Import all base styles second
+// - normalize, variables, typography etc
+// - number these files in the order then need to be required
+// - edit colors, and font sizes, and others in these files
+@require './base/*.styl'
+
+// 3. Import all component styles last
+// - as they will require everything above
+// - only put css relevant to each component in the relevent .styl file.
 @require '../components/*.styl'
