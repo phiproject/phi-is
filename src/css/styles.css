@@ -170,6 +170,7 @@ html {
 }
 body {
   position: relative;
+  border: 10px solid #fff;
 }
 img {
   max-width: 100%;
@@ -263,7 +264,6 @@ p {
   max-width: 1400px;
   margin: 0 auto;
   padding: 1em 0.5em 0.5em 0.5em;
-  border: 10px solid #fff;
   overflow: hidden;
 }
 @media only screen and (min-width: 601px) {

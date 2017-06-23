@@ -6,10 +6,13 @@
    - false = off
 */
 
+const window_width = window.innerWidth
+const mobile_width = 600
+
 const Settings = {
    animation: {
-      // Allow animations
-      on: true,
+      // Allow animations for larger devices
+      on: ( window_width > mobile_width ) ? true : false,
       // Main page animations
       gradients: true,
       parallax: true,
