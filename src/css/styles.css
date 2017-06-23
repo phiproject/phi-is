@@ -453,6 +453,34 @@ p {
       -ms-flex-align: center;
           align-items: center;
 }
+.Hero button {
+  -webkit-transition: all 75ms ease-in-out;
+  transition: all 75ms ease-in-out;
+  margin: 0 1em;
+  border: 2px solid #444896;
+  background-color: #444896;
+  color: #fff;
+  border-radius: 5px;
+  padding: 1em;
+  font-size: 22px;
+  text-align: center;
+  opacity: 0.9;
+}
+.Hero button span {
+  font-size: 14px;
+  display: block;
+  padding-bottom: 5px;
+}
+.Hero button:hover {
+  opacity: 1;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+.Hero button.alt {
+  background-color: #fff;
+  border-color: #fff;
+  color: #444896;
+}
 .Sections {
   text-align: center;
 }

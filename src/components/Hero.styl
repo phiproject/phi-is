@@ -5,3 +5,29 @@
    display flex
    justify-content center // horizontal
    align-items center // vertical
+
+   button
+      transition all fast ease-in-out
+      margin 0 1em
+      border 2px solid blue
+      background-color blue
+      color white
+      border-radius radius
+      padding 1em
+      font-size 22px
+      text-align center
+      opacity 0.9
+
+      span
+         font-size 14px
+         display block
+         padding-bottom 5px
+
+      &:hover
+         opacity 1
+         transform translateY(-5px)
+
+      &.alt
+         background-color white
+         border-color white
+         color blue

@@ -36,9 +36,24 @@
    "hero":{
       "logo": "logo.svg",
       "title": "Phi Project",
-      "subtitle": "Tokenised Responsibility",
+      "subtitle": "Phi is Tokenised Responsibility",
       "buttons": [
-
+         {
+            "title":"Pink Paper",
+            "subtitle":"Read the",
+            "alt":"",
+            "target":"",
+            "url":"",
+            "type":""
+         },
+         {
+            "title":"Simulator",
+            "subtitle":"Use Phi",
+            "alt":"",
+            "target":"",
+            "url":"",
+            "type":"alt"
+         }
       ]
    },
    "footer":{
