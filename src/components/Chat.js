@@ -16,7 +16,7 @@ function appear(id, section) {
     let elements = document.getElementById(id).getElementsByClassName('message')
     tl.staggerFrom(elements,1.5,{
       css: {
-      //   transform: 'translateY(50px)',
+        transform: 'translateY(40px)',
         opacity: 0
       },
       ease: Sine.easeOut
@@ -37,6 +37,24 @@ function appear(id, section) {
   return tl
 }
 
+function leave(id, section) {
+  // Setup timeline
+  const tl = new TimelineMax()
+
+  // Chat stagger animation
+  if (Settings.animation.chat) {
+    tl.to('#'+section,1.5,{
+      css: {
+        transform: 'translateY(-40px)',
+        opacity: 0
+      },
+      ease: Sine.easeOut
+    },0.75)
+  }
+
+  return tl
+}
+
 
 class Chat extends Component {
 
@@ -50,10 +68,15 @@ class Chat extends Component {
   componentDidMount() {
     // Setup animations once the component is actually in scope
     if (Settings.animation.on && Settings.animation.scroll) {
-      const tween = appear(this.id, this.section)
+
       const scene = new ScrollMagic
-      .Scene({triggerElement: "#"+this.section, duration: 200})
-      .setTween(tween)
+      .Scene({triggerElement: "#"+this.section, duration: 300})
+      .setTween( appear(this.id, this.section) )
+      .addTo(this.props.controller)
+
+      const scene2 = new ScrollMagic
+      .Scene({triggerElement: "#"+this.section+'-end', duration: 300})
+      .setTween( leave(this.id, this.section) )
       .addTo(this.props.controller)
 
       if (Settings.animation.scroll_indicators) {
@@ -64,7 +87,11 @@ class Chat extends Component {
 
 
   renderMessage = (message, i) => (
-    <div key={i} id={`${this.id}-${i}`} className="message chat-message"> <span>{ message }</span> </div>
+    <div key={i} className="block chat-message">
+      <div id={`${this.id}-${i}`} className="message">
+        <span>{ message }</span>
+      </div>
+    </div>
   )
 
   render() {

@@ -255,8 +255,12 @@ body {
   position: absolute;
 }
 .simulate-line {
-  stroke: #88ce02;
+  stroke: #222;
   stroke-width: 4px;
+}
+.simulate-line2 {
+  stroke-width: 2px;
+  stroke-dasharray: 5px;
 }
 .App {
   position: relative;
@@ -346,7 +350,7 @@ body {
 .bg-mountains {
   background-image: url("../images/mountains.png");
   background-repeat: no-repeat;
-  background-position: center 1000px;
+  background-position: center 0px;
   background-size: 100% auto;
   position: fixed;
   left: 0;
@@ -369,7 +373,7 @@ body {
   display: inline-block;
   font-size: 18px;
 }
-.chat-message:first-child {
+.chat-message:first-child div {
   background-color: #444896;
   color: #fff;
 }
@@ -413,6 +417,8 @@ body {
 .Header {
   text-align: center;
   margin-bottom: 2em;
+  position: fixed;
+  z-index: 50;
 }
 .header__link {
   color: #fff;
@@ -440,7 +446,8 @@ body {
   background-color: #444896;
 }
 .Hero {
-  min-height: 400px;
+  margin-top: 3em;
+  min-height: 500px;
   text-align: center;
   color: #fff;
   display: -webkit-box;
@@ -453,10 +460,15 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+.Hero .buttons {
+  padding-top: 2em;
+  max-width: 550px;
+  margin: 0 auto;
+}
 .Hero button {
+  width: 100%;
   -webkit-transition: all 75ms ease-in-out;
   transition: all 75ms ease-in-out;
-  margin: 0 1em;
   border: 2px solid #444896;
   background-color: #444896;
   color: #fff;
@@ -493,4 +505,7 @@ body {
 }
 .Section:last-child {
   margin-bottom: 10em;
+}
+.section-end {
+  margin-top: 200px;
 }

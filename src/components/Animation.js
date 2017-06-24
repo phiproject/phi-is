@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Settings from '../settings'
 
-import { TimelineMax, Quart } from 'gsap'
+import { TimelineMax, Quart, Sine } from 'gsap'
 import ScrollMagic from 'scrollmagic'
 import 'animation.gsap'
 import 'debug.addIndicators'
@@ -22,7 +22,7 @@ function appear(id) {
       transform: 'translateY(100px)',
       opacity: 0,
     },
-    ease: Quart.easeInOut
+    ease: Sine.easeInOut
   },0)
 }
 

@@ -23,6 +23,7 @@ const Settings = {
       parallax: false,
       scroll: true,
       scroll_indicators: false,
+      scrollTo: true,
       // Section animations
       chat: true,
       diagrams: true, // enable/disable all diagram animations

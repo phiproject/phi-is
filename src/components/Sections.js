@@ -20,6 +20,7 @@ class Section extends Component {
                      controller={this.props.controller}
                   />
                </div>
+               <div id={`${this.props.id}-end`} className="section-end"></div>
 
          </div>
       )
