@@ -499,18 +499,18 @@ body {
   margin: 0 auto;
   text-transform: uppercase;
 }
-.svg-icon {
+.buttons .svg-icon {
   -webkit-transition: all 150ms ease-in-out;
   transition: all 150ms ease-in-out;
   margin: 0em 1em;
-  opacity: 0.8 !important;
+  opacity: 0.8;
 }
-.svg-icon:hover {
+.buttons .svg-icon:hover {
   opacity: 1;
-  -webkit-transform: translateY(-50px) rotate(180deg);
-          transform: translateY(-50px) rotate(180deg);
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
-.svg-icon svg {
+.buttons .svg-icon svg {
   width: 100%;
 }
 .Sections {

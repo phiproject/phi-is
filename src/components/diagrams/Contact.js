@@ -13,12 +13,12 @@ class Contact extends Component {
       <div className="diagram">
 
         <div className="buttons row">
-           <div className="col s6 offset-m4 m4">
+           <div className="col s6">
               <a href={play_button.url}>
                  <IconPlay {...play_button} />
               </a>
            </div>
-           <div className="col s6 m4">
+           <div className="col s6">
               <a href={read_button.url}>
                  <IconRead {...read_button} />
               </a>
