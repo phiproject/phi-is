@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 
+import icon_play from '../images/icon-play.svg'
+import icon_read from '../images/icon-read.svg'
+
 class Hero extends Component {
 
    renderButton = (button, i) => {
@@ -24,7 +27,13 @@ class Hero extends Component {
                <h1 className="Xrellax" data-rellax-speed="1">{data.title}</h1>
                <h2 className="Xrellax" data-rellax-speed="3">{data.subtitle}</h2>
                <div className="buttons row">
-                  {data.buttons.map((button,i)=>this.renderButton(button,i))}
+                  {/* {data.buttons.map((button,i)=>this.renderButton(button,i))} */}
+                  <div className="col s6">
+                     <img src={icon_play} alt=""/>
+                  </div>
+                  <div className="col s6">
+                     <img src={icon_read} alt=""/>
+                  </div>
                </div>
             </div>
 

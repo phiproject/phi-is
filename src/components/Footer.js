@@ -51,9 +51,9 @@ class Footer extends Component {
 
             <div className="col s12 m6">
 
-               <div className="footer__links right">
+               {/* <div className="footer__links right">
                   { text_links.map((link,i) => this.renderLink(link,i)) }
-               </div>
+               </div> */}
 
             </div>
 

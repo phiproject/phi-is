@@ -271,7 +271,7 @@ body {
 }
 .simulate-line {
   stroke: #222;
-  stroke-width: 4px;
+  stroke-width: 2px;
 }
 .simulate-line2 {
   stroke-width: 2px;
@@ -370,13 +370,13 @@ body {
   padding: 1em;
   border-radius: 5px;
   width: auto !important;
-  background-color: #fff;
+  background-color: rgba(255,255,255,0.85);
   color: #444896;
   display: inline-block;
   font-size: 18px;
 }
 .chat-message:first-child div {
-  background-color: #444896;
+  background-color: rgba(68,72,150,0.85);
   color: #fff;
 }
 .footer__box {
@@ -448,7 +448,7 @@ body {
   padding: 0.75em;
 }
 .header__link a:hover {
-  background-color: #444896;
+  background-color: rgba(68,72,150,0.85);
 }
 .Hero {
   margin-top: 3em;
@@ -469,6 +469,15 @@ body {
   padding-top: 2em;
   max-width: 550px;
   margin: 0 auto;
+}
+.Hero .buttons img {
+  -webkit-transition: all 75ms ease-in-out;
+  transition: all 75ms ease-in-out;
+}
+.Hero .buttons img:hover {
+  opacity: 1;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 .Hero button {
   width: 100%;
