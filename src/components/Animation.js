@@ -49,15 +49,15 @@ class Animation extends Component {
     }
   }
 
-  renderDiagram = (section) => {
+  renderDiagram = (section, data) => {
     // Simple Object to switch which diagram is needed from the section id
     const diagrams = {
-      'about': <About section={section} />,
-      'create': <Create section={section} />,
-      'simulate': <Simulate section={section} />,
-      'invest': <Invest section={section} />,
-      'reorganize': <Reorganize section={section} />,
-      'contact': <Contact section={section} />,
+      'about': <About section={section} data={data} />,
+      'create': <Create section={section} data={data} />,
+      'simulate': <Simulate section={section} data={data} />,
+      'invest': <Invest section={section} data={data} />,
+      'reorganize': <Reorganize section={section} data={data} />,
+      'contact': <Contact section={section} data={data} />,
     }
     return diagrams[section]
   }
@@ -65,7 +65,7 @@ class Animation extends Component {
   render() {
     return (
       <div id={this.id} className="Animation">
-        { this.renderDiagram(this.section) }
+        { this.renderDiagram(this.section, this.props.data) }
       </div>
     );
   }

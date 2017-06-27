@@ -465,20 +465,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-.Hero .buttons {
-  padding-top: 2em;
-  max-width: 550px;
-  margin: 0 auto;
-}
-.Hero .buttons img {
-  -webkit-transition: all 75ms ease-in-out;
-  transition: all 75ms ease-in-out;
-}
-.Hero .buttons img:hover {
-  opacity: 1;
-  -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
-}
 .Hero button {
   width: 100%;
   -webkit-transition: all 75ms ease-in-out;
@@ -506,6 +492,26 @@ body {
   background-color: #fff;
   border-color: #fff;
   color: #444896;
+}
+.buttons {
+  padding-top: 2em;
+  max-width: 550px;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+.svg-icon {
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  margin: 0em 1em;
+  opacity: 0.8 !important;
+}
+.svg-icon:hover {
+  opacity: 1;
+  -webkit-transform: translateY(-50px) rotate(180deg);
+          transform: translateY(-50px) rotate(180deg);
+}
+.svg-icon svg {
+  width: 100%;
 }
 .Sections {
   text-align: center;

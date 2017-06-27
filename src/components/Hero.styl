@@ -7,17 +7,6 @@
    justify-content center // horizontal
    align-items center // vertical
 
-   .buttons
-      padding-top 2em
-      max-width 550px
-      margin 0 auto
-
-      img
-         transition all fast ease-in-out
-         &:hover
-            opacity 1
-            transform translateY(-5px)
-
    button
       width 100%
       transition all fast ease-in-out
@@ -43,3 +32,21 @@
          background-color white
          border-color white
          color blue
+
+.buttons
+   padding-top 2em
+   max-width 550px
+   margin 0 auto
+   text-transform uppercase
+
+.svg-icon
+   transition all medi ease-in-out
+   margin 0em 1em
+   opacity 0.8 !important
+
+   &:hover
+      opacity 1
+      transform translateY(-50px) rotate(180deg)
+
+   svg
+      width 100%

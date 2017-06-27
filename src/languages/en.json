@@ -43,16 +43,16 @@
       "subtitle": "Phi is Tokenised Responsibility",
       "buttons": [
          {
-            "title":"Pink Paper",
-            "subtitle":"Read the",
+            "title":"Read",
+            "subtitle":"Pink Paper",
             "alt":"Click to read the Pink Paper",
             "target":"",
             "url":"",
             "type":""
          },
          {
-            "title":"Simulator",
-            "subtitle":"Use Phi",
+            "title":"Play",
+            "subtitle":"Simulator",
             "alt":"Click to use the Phi Simulator",
             "target":"",
             "url":"",
@@ -172,6 +172,24 @@
             "Say hi to contact@phi.is",
             "Join our slack at phiprojectteam.slack.com",
             "Develop phi together: gitub.com/srelka-2017/phi"
+         ],
+         "buttons": [
+            {
+               "title":"Read",
+               "subtitle":"Pink Paper",
+               "alt":"Click to read the Pink Paper",
+               "target":"",
+               "url":"",
+               "type":""
+            },
+            {
+               "title":"Play",
+               "subtitle":"Simulator",
+               "alt":"Click to use the Phi Simulator",
+               "target":"",
+               "url":"",
+               "type":"alt"
+            }
          ]
       }
    ]

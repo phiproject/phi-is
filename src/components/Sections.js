@@ -18,6 +18,7 @@ class Section extends Component {
                   <Animation
                      section={this.props.id}
                      controller={this.props.controller}
+                     data={this.props}
                   />
                </div>
                <div id={`${this.props.id}-end`} className="section-end"></div>

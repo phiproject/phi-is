@@ -24,14 +24,18 @@ class Header extends Component {
    render() {
       const { left_links, right_links } = this.props.data
       return (
-         <div className="Header container row">
+         <div className="Header">
 
-            <div className="col s-hide m7 left">
-               { left_links.map((link,i) => this.renderLink(link,i) ) }
-            </div>
+            <div className="container row">
 
-            <div className="col s12 m5 right">
-               { right_links.map((link,i) => this.renderLink(link,i) ) }
+               <div className="col s-hide m7 left">
+                  { left_links.map((link,i) => this.renderLink(link,i) ) }
+               </div>
+
+               <div className="col s12 m5 right">
+                  { right_links.map((link,i) => this.renderLink(link,i) ) }
+               </div>
+
             </div>
 
          </div>

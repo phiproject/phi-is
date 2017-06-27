@@ -30,7 +30,7 @@
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="play">
             <circle id="play_bottom_shape_shadow" fill-opacity="0.5" fill="#000000" fill-rule="nonzero" filter="url(#filter-1)" cx="145.3" cy="116.9" r="70.8"></circle>
-            <circle id="play_bottom_shape-copy" fill="#E4F5FD" fill-rule="nonzero" cx="143.3" cy="114.9" r="70.8"></circle>
+            <circle id="play_bottom_shape" fill="#E4F5FD" fill-rule="nonzero" cx="143.3" cy="114.9" r="70.8"></circle>
             <polygon id="play_top_shape_shadow" fill-opacity="0.5" fill="#000000" fill-rule="nonzero" filter="url(#filter-2)" points="90.6 132.1 16 132.1 53.3 67.6 90.6 3 127.8 67.6 165.1 132.1"></polygon>
             <polygon id="play_top_shape" fill="#D0D5EC" fill-rule="nonzero" points="88.6 130.1 14 130.1 51.3 65.6 88.6 1 125.8 65.6 163.1 130.1"></polygon>
             <g id="play_subtitle" fill-opacity="1" fill="#FFFFFF">
