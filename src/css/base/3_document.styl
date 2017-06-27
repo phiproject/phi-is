@@ -1,9 +1,22 @@
 /*
   Base style for the document
   - set the background color/image of the app
+  - set the width of the container
   - don't do anything else here
 */
 
 body
    background linear-gradient(to bottom, bg_blue, bg_purple)
-   border 10px solid white
+   border 0px solid white
+
+.container
+   max-width 1400px
+   margin 0 auto
+
+   padding 1em 0.5em 0.5em 0.5em
+
+   @media only screen and (min-width: 601px)
+      padding 2em
+
+   @media only screen and (min-width: 993px)
+      padding 3em

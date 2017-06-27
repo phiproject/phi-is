@@ -228,7 +228,22 @@ p {
 body {
   background: -webkit-gradient(linear, left top, left bottom, from(#83d1eb), to(#be68a9));
   background: linear-gradient(to bottom, #83d1eb, #be68a9);
-  border: 10px solid #fff;
+  border: 0px solid #fff;
+}
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1em 0.5em 0.5em 0.5em;
+}
+@media only screen and (min-width: 601px) {
+  .container {
+    padding: 2em;
+  }
+}
+@media only screen and (min-width: 993px) {
+  .container {
+    padding: 3em;
+  }
 }
 .Animation {
   min-height: 400px;
@@ -266,21 +281,6 @@ body {
   position: relative;
   text-align: center;
   overflow: hidden;
-}
-.container {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 1em 0.5em 0.5em 0.5em;
-}
-@media only screen and (min-width: 601px) {
-  .container {
-    padding: 2em;
-  }
-}
-@media only screen and (min-width: 993px) {
-  .container {
-    padding: 3em;
-  }
 }
 .bg-gradients {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#83d1eb), color-stop(#be68a9), color-stop(#ec3a74), color-stop(#f49567), color-stop(#be68a9), color-stop(#fbecb6), color-stop(#64a8cb), color-stop(#c7717c), color-stop(#b84069), to(#8e549c));
