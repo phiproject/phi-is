@@ -20,6 +20,10 @@
       ],
       "right_links":[
          {
+            "title":"Contact",
+            "url":"#contact"
+         },
+         {
             "title":"Slack",
             "url":""
          },

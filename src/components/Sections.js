@@ -7,14 +7,14 @@ class Section extends Component {
       return (
          <div id={this.props.id} className="Section row">
 
-               <div className="col s12 m8 l5">
+               <div className="col s12 m8 l4">
                   <Chat
                      section={this.props.id}
                      messages={this.props.chat}
                      controller={this.props.controller}
                   />
                </div>
-               <div className="col s12 m12 l7">
+               <div className="col s12 m12 l8">
                   <Animation
                      section={this.props.id}
                      controller={this.props.controller}
