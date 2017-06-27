@@ -1,31 +1,31 @@
-.container {
+/*.container {
   margin: 0 auto;
   max-width: 1400px;
   width: 90%;
-}
+}*/
 
 @media only screen and (max-width: 600px) {
   .s-hide { display: none }
 }
 
 @media only screen and (min-width: 601px) {
-  .container {
+  /*.container {
     width: 85%;
-  }
+  }*/
 
   .m-hide { display: none; }
 }
 
 @media only screen and (min-width: 993px) {
-  .container {
+  /*.container {
     width: 70%;
-  }
+  }*/
 }
 
-.container .row {
+/*.container .row {
   margin-left: -0.75rem;
   margin-right: -0.75rem;
-}
+}*/
 
 .section {
   padding-top: 1rem;

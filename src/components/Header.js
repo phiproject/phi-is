@@ -24,7 +24,7 @@ class Header extends Component {
    render() {
       const { left_links, right_links } = this.props.data
       return (
-         <div className="Header row">
+         <div className="Header container row">
 
             <div className="col s-hide m7 left">
                { left_links.map((link,i) => this.renderLink(link,i) ) }
