@@ -277,6 +277,9 @@ body {
   stroke-width: 2px;
   stroke-dasharray: 5px;
 }
+.invest-svg {
+  margin: 0 4em;
+}
 .App {
   position: relative;
   text-align: center;

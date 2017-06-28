@@ -39,8 +39,14 @@
    },
    "hero":{
       "logo": "logo.svg",
-      "title": "Phi Project",
-      "subtitle": "Phi is Tokenised Responsibility",
+      "title": "Hi we're Phi.",
+      "adjectives": [
+         "Create",
+         "Simulate",
+         "Invest",
+         "Reorganize"
+      ],
+      "subtitle": " the future of energy.",
       "buttons": [
          {
             "title":"Read",

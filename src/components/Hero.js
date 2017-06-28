@@ -27,8 +27,8 @@ class Hero extends Component {
          <div className="Hero">
 
             <div>
-               <h1 className="Xrellax" data-rellax-speed="1">{data.title}</h1>
-               <h2 className="Xrellax" data-rellax-speed="3">{data.subtitle}</h2>
+               <h1>{data.title}</h1>
+               <h2>{data.subtitle}</h2>
                <div className="buttons row">
                   {/* {data.buttons.map((button,i)=>this.renderButton(button,i))} */}
                   <div className="col s6">
