@@ -1,9 +1,37 @@
 import React, { Component } from 'react'
 
+import { TimelineMax, Quart } from 'gsap'
+
 import IconRead from './icons/IconRead'
 import IconPlay from './icons/IconPlay'
 
 class Hero extends Component {
+
+   componentDidMount() {
+      this.animateAdjectives()
+   }
+
+   animateAdjectives = () => {
+      // Setup Timeline
+      const tl = new TimelineMax({ repeat: -1 })
+      const length = this.props.data.adjectives.length
+      const elements = document.getElementsByClassName('adjective')
+      const speed = 1
+      const delay = 1
+
+      // Add animations
+      tl.set(elements,{className:'+=hidden'})
+
+      for (let i=0; i < length; i++) {
+         tl.to(elements[i], speed, {
+            className: '-=hidden',
+         })
+         .to(elements[i], speed, {
+            className: '+=hidden',
+            delay: delay,
+         })
+      }
+   }
 
    renderButton = (button, i) => {
       return (
@@ -28,7 +56,10 @@ class Hero extends Component {
 
             <div>
                <h1>{data.title}</h1>
-               <h2>{data.subtitle}</h2>
+               <h2>
+                  <span id="adjectives">{data.adjectives.map((adjective,i)=><div className="adjective" key={i}>{adjective}</div>)}</span>
+                  {data.subtitle}
+               </h2>
                <div className="buttons row">
                   {/* {data.buttons.map((button,i)=>this.renderButton(button,i))} */}
                   <div className="col s6">

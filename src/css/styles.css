@@ -516,6 +516,15 @@ body {
 .buttons .svg-icon svg {
   width: 100%;
 }
+#adjectives div {
+  display: inline;
+  position: relative;
+  border-bottom: 3px solid #fff;
+}
+#adjectives div.hidden {
+  opacity: 0;
+  display: none;
+}
 .Sections {
   text-align: center;
 }
