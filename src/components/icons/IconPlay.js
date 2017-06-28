@@ -4,7 +4,7 @@ class IconPlay extends Component {
    render() {
       const { title, subtitle } = this.props
       return (
-         <div className="svg-icon">
+         <div className="svg-icon svg-play">
          <svg viewBox="0 0 225 225" version="1.1" xmlns="http://www.w3.org/2000/svg">
              <defs>
                  <filter x="-6.4%" y="-6.4%" width="112.7%" height="112.7%" filterUnits="objectBoundingBox" id="filter-1">

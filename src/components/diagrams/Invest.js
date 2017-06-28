@@ -9,7 +9,7 @@ class Invest extends Component {
   animate = (diagram_id) => {
     // Setup Timeline
     const tl = new TimelineMax()
-    const delayInterval = 0.2
+    const delayInterval = 0.8
     const speed = 0.8
     const groups = [1,2,3,4,5,6]
 
@@ -19,7 +19,7 @@ class Invest extends Component {
         y: '+=10',
         opacity: 0,
         ease: Quart.easeInOut,
-        // delay: delayInterval*group,
+        delay: delayInterval,
       }, 0.05)
     })
 

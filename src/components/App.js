@@ -44,8 +44,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App container">
-
+      <div>
         {/* Background Layers */}
         { Settings.background.gradients &&
         <div className="bg-gradients">
@@ -57,17 +56,19 @@ class App extends Component {
           <div className="bg-gradient bg-gradient-hide bg-gradient-reorganize"></div>
           <div className="bg-gradient bg-gradient-hide bg-gradient-contact"></div>
         </div> }
-        { Settings.background.grid && <div className="bg-grid"></div> }
-        { Settings.background.mountains && <div className="bg-mountains rellax" data-rellax-speed="1500"></div> }
+        { Settings.background.grid && <div className="bg-grid bg-margin bg-frame"></div> }
+        { Settings.background.mountains && <div className="bg-mountains bg-margin"></div> }
 
-        {/* Page Components
-          - pass controller to anything with a timeline
-          - pass data to anything with text - will automatically handle language
-        */}
-        <Header data={this.data.header} />
-        <Hero data={this.data.hero} />
-        <Sections data={this.data.sections} controller={this.controller} />
-        <Footer data={this.data.footer} />
+        <div className="App container">
+          {/* Page Components
+            - pass controller to anything with a timeline
+            - pass data to anything with text - will automatically handle language
+          */}
+          <Header data={this.data.header} />
+          <Hero data={this.data.hero} />
+          <Sections data={this.data.sections} controller={this.controller} />
+          <Footer data={this.data.footer} />
+        </div>
 
       </div>
     );

@@ -280,6 +280,14 @@ body {
 .invest-svg {
   margin: 0 4em;
 }
+#contact .svg-play {
+  position: relative;
+  top: -100px;
+}
+#contact .svg-read {
+  position: relative;
+  top: 100px;
+}
 .App {
   position: relative;
   text-align: center;
@@ -292,7 +300,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 101%;
   z-index: -1;
 }
 .bg-gradient {
@@ -341,10 +349,47 @@ body {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#b84069), to(#8e549c));
   background-image: linear-gradient(to bottom, #b84069, #8e549c);
 }
+.bg-margin {
+  top: 0em !important;
+  left: 0em !important;
+  right: 0em !important;
+  bottom: 0em !important;
+  width: auto !important;
+}
+@media only screen and (min-width: 401px) {
+  .bg-margin {
+    top: 0.5em !important;
+    left: 0.5em !important;
+    right: 0.5em !important;
+  }
+}
+@media only screen and (min-width: 601px) {
+  .bg-margin {
+    top: 1em !important;
+    left: 1em !important;
+    right: 1em !important;
+  }
+}
+@media only screen and (min-width: 993px) {
+  .bg-margin {
+    top: 1.5em !important;
+    left: 1.5em !important;
+    right: 1.5em !important;
+    margin-bottom: 1.5em;
+  }
+}
+.bg-frame {
+  border: 0;
+}
+@media only screen and (min-width: 401px) {
+  .bg-frame {
+    border: 1px solid rgba(255,255,255,0.3);
+  }
+}
 .bg-grid {
   background-image: url("../images/grid.png");
-  background-position: center center;
-  position: fixed;
+  background-position: center -1px;
+  position: absolute;
   left: 0;
   top: 0;
   height: 100%;
@@ -355,11 +400,11 @@ body {
 .bg-mountains {
   background-image: url("../images/mountains.png");
   background-repeat: no-repeat;
-  background-position: center 0px;
+  background-position: center 1200px;
   background-size: 100% auto;
-  position: fixed;
+  position: absolute;
   left: 0;
-  top: -700px;
+  top: 0;
   height: 4000px;
   width: 100%;
   z-index: -1;
@@ -455,7 +500,7 @@ body {
 }
 .Hero {
   margin-top: 3em;
-  min-height: 500px;
+  min-height: 600px;
   text-align: center;
   color: #fff;
   display: -webkit-box;
@@ -467,6 +512,23 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.Hero h1 {
+  padding: 0.5em 0;
+}
+@media only screen and (max-width: 601px) {
+  .Hero h1 {
+    font-size: 3em;
+  }
+}
+.Hero h2 {
+  font-size: 2em;
+  display: inline;
+  background-color: #444896;
+  color: #fff;
+  border-radius: 5px;
+  padding: 0.5em;
+  opacity: 0.9;
 }
 .Hero button {
   width: 100%;
@@ -497,16 +559,17 @@ body {
   color: #444896;
 }
 .buttons {
-  padding-top: 2em;
-  max-width: 550px;
+  max-width: 700px;
   margin: 0 auto;
   text-transform: uppercase;
+  text-align: center;
 }
 .buttons .svg-icon {
   -webkit-transition: all 150ms ease-in-out;
   transition: all 150ms ease-in-out;
-  margin: 0em 1em;
+  margin: 0 auto;
   opacity: 0.8;
+  max-width: 200px;
 }
 .buttons .svg-icon:hover {
   opacity: 1;

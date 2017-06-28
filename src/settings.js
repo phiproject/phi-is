@@ -19,11 +19,12 @@ const Settings = {
       // Allow animations for larger devices
       on: ( window_width > mobile_width ) ? true : false,
       // Main page animations
-      gradients: true,
+      gradients: false,
       parallax: false,
       scroll: true,
       scroll_indicators: false,
       scrollTo: true,
+      adjectives: true,
       // Section animations
       chat: true,
       diagrams: true, // enable/disable all diagram animations

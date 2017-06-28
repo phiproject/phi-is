@@ -4,7 +4,7 @@ class IconRead extends Component {
    render() {
       const { title, subtitle } = this.props
       return (
-         <div className="svg-icon">
+         <div className="svg-icon svg-read">
          <svg viewBox="0 0 225 225" version="1.1" xmlns="http://www.w3.org/2000/svg">
              <defs>
                  <filter x="-8.0%" y="-8.0%" width="115.9%" height="115.9%" filterUnits="objectBoundingBox" id="filter-1">
