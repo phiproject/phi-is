@@ -36,22 +36,22 @@ class Reorganize extends Component {
     .from('#floor_top', floor_speed, {
       y: '-=100',
       opacity: 0,
-      easing: Sine.easeInOut,
+      ease: Sine.easeOut,
     }, floor_delay)
     .from('#floor_left', floor_speed, {
       x: '-=100',
       opacity: 0,
-      easing: Sine.easeInOut,
+      ease: Sine.easeOut,
     }, floor_delay)
     .from('#floor_right', floor_speed, {
       x: '+=100',
       opacity: 0,
-      easing: Sine.easeInOut,
+      ease: Sine.easeOut,
     }, floor_delay)
     .from('#floor_bottom', floor_speed, {
       y: '+=100',
       opacity: 0,
-      easing: Sine.easeInOut,
+      ease: Sine.easeOut,
     }, floor_delay)
 
     // Frames
@@ -79,7 +79,7 @@ class Reorganize extends Component {
 
           <svg viewBox="0 0 1536 762" version="1.1">
               <defs></defs>
-              <g id="Reorganize" stroke="none" strokeWdth="1" fill="none" fillRule="evenodd">
+              <g id="Reorganize" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
                   <g id="reorganize-svg">
                       <g id="reorg_frames" transform="translate(0.000000, 1.000000)">
                           <image className="reorg-frame" id="reorg_frame_1" x="0" y="0" width="1535.5" height="619.5" xlinkHref={frame_1}></image>
