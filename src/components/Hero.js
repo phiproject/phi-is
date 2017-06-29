@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Settings from '../settings'
 
-import { TimelineMax, Quart } from 'gsap'
+import { TimelineMax, TweenMax, Quart, Sine, Back } from 'gsap'
 
 import IconRead from './icons/IconRead'
 import IconPlay from './icons/IconPlay'
@@ -10,13 +10,23 @@ class Hero extends Component {
 
    componentDidMount() {
       if (Settings.animation.adjectives) {
+         this.animateTitle()
          this.animateAdjectives()
       }
    }
 
+   animateTitle = () => {
+      TweenMax.staggerFrom('#hero-1, #hero-2, #hero-3', 0.8, {
+         opacity: 0,
+         y: '+=20px',
+         delay: 0.5,
+         ease: Sine.easeInOut
+      }, 0.4)
+   }
+
    animateAdjectives = () => {
       // Setup Timeline
-      const tl = new TimelineMax({ repeat: -1 })
+      const tl = new TimelineMax({ repeat: -1, delay: 0.2 })
       const length = this.props.data.adjectives.length
       const elements = document.getElementsByClassName('adjective')
       const speed = 1
@@ -58,12 +68,16 @@ class Hero extends Component {
          <div className="Hero">
 
             <div>
-               <h2 className="rellax" data-rellax-speed="0">{data.title}</h2>
-               <h1 className="rellax" data-rellax-speed="1">
-                  <span id="adjectives">{data.adjectives.map((adjective,i)=><div className="adjective" key={i}>{adjective}</div>)}</span>
-                  {data.subtitle}
-               </h1>
-               <div className="buttons row rellax" data-rellax-speed="4">
+               <div id="hero-1">
+                  <h2 className="rellax" data-rellax-speed="0">{data.title}</h2>
+               </div>
+               <div id="hero-2">
+                  <h1 className="rellax" data-rellax-speed="1">
+                     <span id="adjectives">{data.adjectives.map((adjective,i)=><div className="adjective" key={i}>{adjective}</div>)}</span>
+                     {data.subtitle}
+                  </h1>
+               </div>
+               <div id="hero-3" className="buttons row rellax" data-rellax-speed="4">
                   {/* {data.buttons.map((button,i)=>this.renderButton(button,i))} */}
                   <div className="col s6">
                      <a href={play_button.url}>
