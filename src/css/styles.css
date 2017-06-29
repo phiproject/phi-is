@@ -280,7 +280,7 @@ body {
 }
 .about-images {
   position: relative;
-  top: -100px;
+  top: -50px;
 }
 .about-images img {
   width: 30%;
@@ -373,10 +373,12 @@ body {
 #contact .svg-play {
   position: relative;
   top: -100px;
+  left: 50px;
 }
 #contact .svg-read {
   position: relative;
   top: 100px;
+  left: -50px;
 }
 .App {
   position: relative;

@@ -3,10 +3,10 @@ import Diagram from './Diagram'
 
 import { TimelineMax, Sine } from 'gsap'
 
-import createImg from '../../images/about-create.png'
-import simulateImg from '../../images/about-simulate.png'
-import investImg from '../../images/about-invest.png'
-import reorganizeImg from '../../images/about-reorganize.png'
+import create_img from '../../images/about-create.png'
+import simulate_img from '../../images/about-simulate.png'
+import invest_img from '../../images/about-invest.png'
+import reorganize_img from '../../images/about-reorganize.png'
 
 class About extends Component {
 
@@ -28,18 +28,18 @@ class About extends Component {
       //     /*p4*/{x:'-=100', y:'+=0'},{x:'+=0', y:'+=0'}
       //   ]
       // }/*bezier end*/,
-      y: '+=50',
+      y: '+=60',
       opacity: 0,
       // scale: 0.8,
       ease: Sine.easeOut,
       delay: delayInterval,
    }, stagger)
    .staggerTo('.about-image',speed*3,{
-      y: '+=15',
+      y: '+=20',
       ease: Sine.easeInOut,
       repeat: -1,
       yoyo: true,
-   }, stagger*2)
+   }, stagger*3)
 
     // tl.to('.about-image', 2, {
     //   bezier:{
@@ -62,12 +62,17 @@ class About extends Component {
     return (
       <Diagram section={this.props.section} animate={this.animate}>
 
-        <div className="about-images">
-          <div className="diagram-absolute"><img className="about-image about-create" src={createImg} alt=""/></div>
-          <div className="diagram-absolute"><img className="about-image about-simulate" src={simulateImg} alt=""/></div>
-          <div className="diagram-absolute"><img className="about-image about-invest" src={investImg} alt=""/></div>
-          <div className="diagram-absolute"><img className="about-image about-reorganize" src={reorganizeImg} alt=""/></div>
-        </div>
+        <svg className="about-images" viewBox="0 0 2067 1523" version="1.1">
+            <defs></defs>
+            <g id="About" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+                <g id="about-svg">
+                    <image className="about-image" id="about-create" x="1044" y="7" width="649" height="368" xlinkHref={create_img}></image>
+                    <image className="about-image" id="about-simulate" x="1325" y="460" width="737" height="341" xlinkHref={simulate_img}></image>
+                    <image className="about-image" id="about-invest" x="1184" y="886" width="738" height="380" xlinkHref={invest_img}></image>
+                    <image className="about-image" id="about-reorganize" x="406" y="1020" width="681" height="338" xlinkHref={reorganize_img}></image>
+                </g>
+            </g>
+        </svg>
 
       </Diagram>
     )
