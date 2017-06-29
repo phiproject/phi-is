@@ -11,9 +11,11 @@
 
 .diagram
    position relative
-   width 85%
+   width 90%
    img
       width 100%
+   @media only screen and (max-width: 601px)
+      width 110%
 
 .diagram-padding
    width 100%
@@ -105,6 +107,21 @@
 
 
 // Reorganize
+
+.reorganize-frames
+   position relative
+   text-align center !important
+   // margin-top -150px
+
+   .reorg-frame
+      // background-image url('../images/create-frames-stacked-min.png')
+      // max-width 100%
+      // background-size 100%
+      // display block
+      // position absolute
+
+      &.hidden
+         opacity 0
 
 
 // Contact

@@ -261,10 +261,15 @@ body {
 }
 .diagram {
   position: relative;
-  width: 85%;
+  width: 90%;
 }
 .diagram img {
   width: 100%;
+}
+@media only screen and (max-width: 601px) {
+  .diagram {
+    width: 110%;
+  }
 }
 .diagram-padding {
   width: 100%;
@@ -357,6 +362,13 @@ body {
 }
 .invest-svg {
   margin: 0;
+}
+.reorganize-frames {
+  position: relative;
+  text-align: center !important;
+}
+.reorganize-frames .reorg-frame.hidden {
+  opacity: 0;
 }
 #contact .svg-play {
   position: relative;
@@ -487,6 +499,11 @@ body {
   width: 100%;
   z-index: -1;
   opacity: 0.5;
+}
+@media only screen and (max-width: 601px) {
+  .bg-mountains {
+    background-image: none;
+  }
 }
 .Chat {
   text-align: left;
