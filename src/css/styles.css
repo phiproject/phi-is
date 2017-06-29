@@ -261,10 +261,14 @@ body {
 }
 .diagram {
   position: relative;
-  width: 100%;
+  width: 85%;
 }
 .diagram img {
   width: 100%;
+}
+.diagram-padding {
+  width: 100%;
+  margin: 0 auto;
 }
 .diagram-absolute {
   position: absolute;
@@ -295,8 +299,7 @@ body {
 .create-frames {
   position: relative;
   text-align: center !important;
-  width: 85%;
-  margin: 0 auto;
+  margin-top: -150px;
 }
 .create-frames .create-frame {
   background-image: url("../images/create-frames-stacked-min.png");
@@ -304,7 +307,6 @@ body {
   background-size: 100%;
   display: block;
   position: absolute;
-  margin-top: -200px;
 }
 .create-frames .create-frame.hidden {
   opacity: 0;
@@ -354,7 +356,7 @@ body {
   stroke-dasharray: 5px;
 }
 .invest-svg {
-  margin: 0 4em;
+  margin: 0;
 }
 #contact .svg-play {
   position: relative;

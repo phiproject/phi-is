@@ -19,7 +19,7 @@ class Invest extends Component {
         y: '+=10',
         opacity: 0,
         ease: Quart.easeInOut,
-        delay: (!group==1) ? delayInterval : 0.2,
+        delay: (!group===1) ? delayInterval : 0.2,
       }, 0.05)
     })
 

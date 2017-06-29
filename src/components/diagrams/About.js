@@ -13,7 +13,7 @@ class About extends Component {
   animate = (diagram_id) => {
     // Setup Timeline
     const tl = new TimelineMax()
-    const delayInterval = 0
+    const delayInterval = 0.2
     const speed = 0.8
     const stagger = 0.15
 
@@ -31,9 +31,15 @@ class About extends Component {
       y: '+=50',
       opacity: 0,
       // scale: 0.8,
+      ease: Sine.easeOut,
+      delay: delayInterval,
+   }, stagger)
+   .staggerTo('.about-image',speed*3,{
+      y: '+=15',
       ease: Sine.easeInOut,
-      delay: 0.2,
-    }, stagger)
+      repeat: -1,
+      yoyo: true,
+   }, stagger*2)
 
     // tl.to('.about-image', 2, {
     //   bezier:{

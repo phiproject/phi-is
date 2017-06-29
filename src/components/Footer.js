@@ -26,8 +26,8 @@ class Footer extends Component {
          team_title,
          developers,
          developers_title,
-         text_links,
-         image_links,
+         // text_links,
+         // image_links,
       } = this.props.data
 
       return (

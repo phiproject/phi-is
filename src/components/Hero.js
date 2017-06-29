@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Settings from '../settings'
 
-import { TimelineMax, TweenMax, Quart, Sine, Back } from 'gsap'
+import { TimelineMax, TweenMax, Sine } from 'gsap'
 
 import IconRead from './icons/IconRead'
 import IconPlay from './icons/IconPlay'

@@ -6,16 +6,24 @@
    justify-content center // horizontal
    align-items center // vertical
 
+
+// General Diagram styles
+
 .diagram
    position relative
-   width 100%
+   width 85%
    img
       width 100%
+
+.diagram-padding
+   width 100%
+   margin 0 auto
 
 .diagram-absolute
    position absolute
 
 
+// About
 
 .about-images
    position relative
@@ -36,28 +44,19 @@
       left -150px
 
 
-frame_width  = 100% // 738px
-frame_height = 100% // 419px
+// Create
 
 .create-frames
    position relative
    text-align center !important
-   width 85%
-   margin 0 auto
+   margin-top -150px
 
    .create-frame
       background-image url('../images/create-frames-stacked-min.png')
-      // background-position 0 0
-      // background-size 300%
-      // height 0
-      // padding-bottom 30%
-
       max-width 100%
       background-size 100%
-
       display block
       position absolute
-      margin-top -200px
 
       &.hidden
          opacity 0
@@ -87,32 +86,8 @@ frame_height = 100% // 419px
    .create-frame-11
       background-position 0 100%
 
-   // .create-frame-0
-   //    background-position frame_width*0 frame_height*-0
-   // .create-frame-1
-   //    background-position frame_width*0 frame_height*-1
-   // .create-frame-2
-   //    background-position frame_width*0 frame_height*-2
-   // .create-frame-3
-   //    background-position frame_width*0 frame_height*-3
-   // .create-frame-4
-   //    background-position frame_width*-1 frame_height*0
-   // .create-frame-5
-   //    background-position frame_width*-1 frame_height*-1
-   // .create-frame-6
-   //    background-position frame_width*-1 frame_height*-2
-   // .create-frame-7
-   //    background-position frame_width*-1 frame_height*-3
-   // .create-frame-8
-   //    background-position frame_width*-2 frame_height*0
-   // .create-frame-9
-   //    background-position frame_width*-2 frame_height*-1
-   // .create-frame-10
-   //    background-position frame_width*-2 frame_height*-2
-   // .create-frame-11
-   //    background-position frame_width*-2 frame_height*-3
 
-
+// Simulate
 
 .simulate-line
    stroke black // blue // black // #88CE02
@@ -123,15 +98,16 @@ frame_height = 100% // 419px
    stroke-dasharray 5px
 
 
+// Invest
+
 .invest-svg
-   margin 0 4em
-   // .invest-cube
-   //    polygon, path
-   //       transition all medi ease-in-out
-   //
-   //    &:hover
-   //       polygon, path
-   //          transform translateY(-10px)
+   margin 0
+
+
+// Reorganize
+
+
+// Contact
 
 #contact
    .svg-play
@@ -140,21 +116,3 @@ frame_height = 100% // 419px
    .svg-read
       position relative
       top 100px
-
-
-// --- Unused ---
-
-// #line1
-//    stroke red
-// #line2
-//    stroke blue
-// #line3
-//    stroke #88CE02
-// #line4
-//    stroke bg_pink
-// #line5
-//    stroke bg_purple2
-// #line6
-//    stroke black
-// #line7
-//    stroke bg_blue

@@ -81,6 +81,7 @@ class Chat extends Component {
 
       if (Settings.animation.scroll_indicators) {
         scene.addIndicators()
+        scene2.addIndicators()
       }
     }
   }

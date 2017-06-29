@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Diagram from './Diagram'
 
 import IconRead from '../icons/IconRead'
 import IconPlay from '../icons/IconPlay'
