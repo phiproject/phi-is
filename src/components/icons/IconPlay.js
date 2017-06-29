@@ -32,10 +32,10 @@ class IconPlay extends Component {
              </defs>
              <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
                  <g id="play">
-                     <circle id="play_bottom_shape_shadow" fillOpacity="0.5" fill="#000000" fillRule="nonzero" filter="url(#filter-1)" cx="145.3" cy="116.9" r="70.8"></circle>
-                     <circle id="play_bottom_shape" fill="#E4F5FD" fillRule="nonzero" cx="143.3" cy="114.9" r="70.8"></circle>
-                     <polygon id="play_top_shape_shadow" fillOpacity="0.5" fill="#000000" fillRule="nonzero" filter="url(#filter-2)" points="90.6 132.1 16 132.1 53.3 67.6 90.6 3 127.8 67.6 165.1 132.1"></polygon>
-                     <polygon id="play_top_shape" fill="#D0D5EC" fillRule="nonzero" points="88.6 130.1 14 130.1 51.3 65.6 88.6 1 125.8 65.6 163.1 130.1"></polygon>
+                     <circle className="bottom_shape play_bottom_shape_shadow" fillOpacity="0.5" fill="#000000" fillRule="nonzero" filter="url(#filter-1)" cx="145.3" cy="116.9" r="70.8"></circle>
+                     <circle className="bottom_shape play_bottom_shape" fill="#E4F5FD" fillRule="nonzero" cx="143.3" cy="114.9" r="70.8"></circle>
+                     <polygon className="top_shape play_top_shape_shadow" fillOpacity="0.5" fill="#000000" fillRule="nonzero" filter="url(#filter-2)" points="90.6 132.1 16 132.1 53.3 67.6 90.6 3 127.8 67.6 165.1 132.1"></polygon>
+                     <polygon className="top_shape play_top_shape" fill="#D0D5EC" fillRule="nonzero" points="88.6 130.1 14 130.1 51.3 65.6 88.6 1 125.8 65.6 163.1 130.1"></polygon>
                      <g id="play_subtitle" fillOpacity="1" fill="#FFFFFF">
                          <use filter="url(#filter-4)" xlinkHref="#text-play-1"></use>
                          <use xlinkHref="#text-play-1"></use>

@@ -61,12 +61,32 @@
       opacity 0.8
       max-width 200px
 
+      polygon, circle, g
+         transition all vslow ease-in-out
+         transform-origin 50% 50%
+
       &:hover
          opacity 1
-         transform translateY(-5px)
+         // transform translateY(-5px)
+
+         .play_top_shape, .play_top_shape_shadow
+            transform translate(10px, 0px)
+         .play_bottom_shape, .play_bottom_shape_shadow
+            transform translate(-10px, -10px)
+         .read_top_shape, .read_top_shape_shadow
+            // transform translate(10px, 0px)
+            transform rotate(45deg) translateY(-10px)
+         .read_bottom_shape, .read_bottom_shape_shadow
+            // transform translate(-10px, 0px)
+            transform rotate(-45deg) translateY(20px)
+         #play_title
+            transform translateY(-5px)
+         #read_title
+            transform translateX(5px)
 
       svg
          width 100%
+
 
 #adjectives
    div
