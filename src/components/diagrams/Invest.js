@@ -5,6 +5,7 @@ import Diagram from './Diagram'
 import { TimelineMax, Quart } from 'gsap'
 
 class Invest extends Component {
+
   animate = (diagram_id) => {
     // Setup Timeline
     const tl = new TimelineMax()
@@ -18,7 +19,7 @@ class Invest extends Component {
         y: '+=10',
         opacity: 0,
         ease: Quart.easeInOut,
-        delay: delayInterval,
+        delay: (!group==1) ? delayInterval : 0.2,
       }, 0.05)
     })
 

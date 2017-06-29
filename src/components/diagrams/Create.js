@@ -1,59 +1,61 @@
 import React, { Component } from 'react'
 import Diagram from './Diagram'
 
-import anime from 'animejs'
-import image from '../../images/simulate_base.png'
+import { TimelineMax } from 'gsap'
+
+// import frame_1 from '../../images/create-frames/create-frame-01.png'
+// import frame_2 from '../../images/create-frames/create-frame-02.png'
+// import frame_3 from '../../images/create-frames/create-frame-03.png'
+// import frame_4 from '../../images/create-frames/create-frame-04.png'
+// import frame_5 from '../../images/create-frames/create-frame-05.png'
+// import frame_6 from '../../images/create-frames/create-frame-06.png'
+// import frame_7 from '../../images/create-frames/create-frame-07.png'
+// import frame_8 from '../../images/create-frames/create-frame-08.png'
+// import frame_9 from '../../images/create-frames/create-frame-09.png'
+// import frame_10 from '../../images/create-frames/create-frame-10.png'
+// import frame_11 from '../../images/create-frames/create-frame-11.png'
+
+// import frames from '../../images/create-frames.png'
 
 class Create extends Component {
+
   animate = (diagram_id) => {
     // Setup Timeline
-    const tl = anime.timeline({ loop: true })
+    const tl = new TimelineMax({ delay: 0.2 })
+    const elements = document.getElementsByClassName('create-frame')
+    const length = elements.length
+    const speed = 0.1
+    const delay = 0.1
 
-    // Add Timeline animations
-    tl
-    .add({
-      targets: '#'+diagram_id+' .simulate-line',
-      strokeDashoffset: [anime.setDashoffset, 0],
-      easing: 'easeInOutSine',
-      duration: 1500,
-      delay: function(el, i) { return i * 250 },
-    })
-    .add({
-      targets: '#'+diagram_id+' .simulate-line',
-      strokeDashoffset: [0, -200],
-      opacity: 0,
-      easing: 'easeInOutSine',
-      duration: 1500,
-      delay: function(el, i) { return i * 250 },
-    })
+    // Add animations
+    tl.set(elements,{className:'+=hidden'})
 
-    
+    for (let i=0; i < length; i++) {
+       tl.to(elements[i], speed, {
+          className: '-=hidden',
+          delay: delay,
+       })
+    }
 
     return tl
   }
 
   render() {
+    const frames = 11
+    const frameImgs = []
+    for (let i=0; i<=frames; i++) {
+      frameImgs.push(i)
+    }
+
     return (
       <Diagram section={this.props.section} animate={this.animate}>
 
-        <svg viewBox="0 0 745 350" className="diagram-absolute">
-            <g id="Page-1" stroke="none" stroke-width="10" fill="none" fill-rule="evenodd">
-                <g id="Artboard-Copy" stroke="#000000" stroke-width="2.5">
-                    <g id="simulate-lines" transform="translate(73.000000, 7.000000)">
-                        <path className="simulate-line" d="M0.2,159.9 C21.6,7.6 152.8,5.7 172.7,165.1" id="line8"></path>
-                        <path className="simulate-line" d="M72.5,196 C78.6,86.3 144.3,50 172.7,165.1" id="line7"></path>
-                        <path className="simulate-line" d="M290.4,104.7 C311.8,-67.6 355.1,-12.9 375,167.3" id="line6"></path>
-                        <path className="simulate-line" d="M290.4,104.8 C272.8,19.8 240.5,22.6 224,111.5" id="line5"></path>
-                        <path className="simulate-line" d="M355.6,215.4 C334.6,93.2 264.1,99.7 249.7,233.7" id="line4"></path>
-                        <path className="simulate-line" d="M399.8,115.3 C404.2,62.6 481.1,61.1 486.9,126.6" id="line3"></path>
-                        <path className="simulate-line" d="M551.4,173.8 C546.3,27.4 457.4,-6.1 450.6,175.7" id="line2"></path>
-                        <path className="simulate-line" d="M307.5,120.3 C317.5,-22.8 467.3,-20.3 487,126.5" id="line1"></path>
-                    </g>
-                </g>
-            </g>
-        </svg>
+        <div className="create-frames">
 
-        <img src={image} id="simulate-img" alt=""/>
+          {/* {frameImgs.map((i) => <div className={`create-frame create-frame-${i}`}></div>)} */}
+          {frameImgs.map((i) => <img className={`create-frame create-frame-${i}`} src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAuIAAAGjAQMAAABTweIoAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAD1JREFUeNrtwQENAAAAwqD3T20ON6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF4MmdoAAZKFgs8AAAAASUVORK5CYII=" />)}
+
+        </div>
 
       </Diagram>
     )

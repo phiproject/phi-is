@@ -1,33 +1,53 @@
 import React, { Component } from 'react'
 import Diagram from './Diagram'
 
-import anime from 'animejs'
-import image from '../../images/simulate_base.png'
+import { TimelineMax, Sine } from 'gsap'
+
+import createImg from '../../images/about-create.png'
+import simulateImg from '../../images/about-simulate.png'
+import investImg from '../../images/about-invest.png'
+import reorganizeImg from '../../images/about-reorganize.png'
 
 class About extends Component {
+
   animate = (diagram_id) => {
     // Setup Timeline
-    const tl = anime.timeline({ loop: true })
+    const tl = new TimelineMax()
+    const delayInterval = 0
+    const speed = 0.8
+    const stagger = 0.15
 
     // Add Timeline animations
-    tl
-    .add({
-      targets: '#'+diagram_id+' .simulate-line',
-      strokeDashoffset: [anime.setDashoffset, 0],
-      easing: 'easeInOutSine',
-      duration: 1500,
-      delay: function(el, i) { return i * 250 },
-    })
-    .add({
-      targets: '#'+diagram_id+' .simulate-line',
-      strokeDashoffset: [0, -200],
+    tl.staggerFrom('.about-image',speed,{
+      // bezier:{
+      //   type:'quadratic',
+      //   values:[
+      //     /*p1*/{x:'+=0', y:'+=0'},{x:'+=100', y:'+=0'},{x:'+=100', y:'+=100'},
+      //     /*p2*/{x:'+=100', y:'+=200'},{x:'+=0', y:'+=200'},
+      //     /*p3*/{x:'-=100', y:'+=200'},{x:'-=100', y:'+=100'},
+      //     /*p4*/{x:'-=100', y:'+=0'},{x:'+=0', y:'+=0'}
+      //   ]
+      // }/*bezier end*/,
+      y: '+=50',
       opacity: 0,
-      easing: 'easeInOutSine',
-      duration: 1500,
-      delay: function(el, i) { return i * 250 },
-    })
+      // scale: 0.8,
+      ease: Sine.easeInOut,
+      delay: 0.2,
+    }, stagger)
 
-    
+    // tl.to('.about-image', 2, {
+    //   bezier:{
+    //     type:'quadratic',
+    //     values:[
+    //       /*p1*/{x:0, y:0},{x:100, y:0},{x:100, y:100},
+    //       /*p2*/{x:100, y:200},{x:0, y:200},
+    //       /*p3*/{x:-100, y:200},{x:-100, y:100},
+    //       /*p4*/{x:-100, y:0},{x:0, y:0}
+    //     ]
+    //   }/*bezier end*/,
+    //   ease:Sine.easeNone,
+    //   delay: 0.2,
+    // }, stagger);
 
     return tl
   }
@@ -36,24 +56,12 @@ class About extends Component {
     return (
       <Diagram section={this.props.section} animate={this.animate}>
 
-        <svg viewBox="0 0 745 350" className="diagram-absolute">
-            <g id="Page-1" stroke="none" stroke-width="10" fill="none" fill-rule="evenodd">
-                <g id="Artboard-Copy" stroke="#000000" stroke-width="2.5">
-                    <g id="simulate-lines" transform="translate(73.000000, 7.000000)">
-                        <path className="simulate-line" d="M0.2,159.9 C21.6,7.6 152.8,5.7 172.7,165.1" id="line8"></path>
-                        <path className="simulate-line" d="M72.5,196 C78.6,86.3 144.3,50 172.7,165.1" id="line7"></path>
-                        <path className="simulate-line" d="M290.4,104.7 C311.8,-67.6 355.1,-12.9 375,167.3" id="line6"></path>
-                        <path className="simulate-line" d="M290.4,104.8 C272.8,19.8 240.5,22.6 224,111.5" id="line5"></path>
-                        <path className="simulate-line" d="M355.6,215.4 C334.6,93.2 264.1,99.7 249.7,233.7" id="line4"></path>
-                        <path className="simulate-line" d="M399.8,115.3 C404.2,62.6 481.1,61.1 486.9,126.6" id="line3"></path>
-                        <path className="simulate-line" d="M551.4,173.8 C546.3,27.4 457.4,-6.1 450.6,175.7" id="line2"></path>
-                        <path className="simulate-line" d="M307.5,120.3 C317.5,-22.8 467.3,-20.3 487,126.5" id="line1"></path>
-                    </g>
-                </g>
-            </g>
-        </svg>
-
-        <img src={image} id="simulate-img" alt=""/>
+        <div className="about-images">
+          <div className="diagram-absolute"><img className="about-image about-create" src={createImg} alt=""/></div>
+          <div className="diagram-absolute"><img className="about-image about-simulate" src={simulateImg} alt=""/></div>
+          <div className="diagram-absolute"><img className="about-image about-invest" src={investImg} alt=""/></div>
+          <div className="diagram-absolute"><img className="about-image about-reorganize" src={reorganizeImg} alt=""/></div>
+        </div>
 
       </Diagram>
     )

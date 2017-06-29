@@ -269,6 +269,82 @@ body {
 .diagram-absolute {
   position: absolute;
 }
+.about-images {
+  position: relative;
+  top: -100px;
+}
+.about-images img {
+  width: 30%;
+  position: relative;
+}
+.about-images .about-create {
+  top: -150px;
+  left: 150px;
+}
+.about-images .about-simulate {
+  left: 250px;
+}
+.about-images .about-invest {
+  top: 150px;
+  left: 150px;
+}
+.about-images .about-reorganize {
+  top: 200px;
+  left: -150px;
+}
+.create-frames {
+  position: relative;
+  text-align: center !important;
+  width: 85%;
+  margin: 0 auto;
+}
+.create-frames .create-frame {
+  background-image: url("../images/create-frames-stacked-min.png");
+  max-width: 100%;
+  background-size: 100%;
+  display: block;
+  position: absolute;
+  margin-top: -200px;
+}
+.create-frames .create-frame.hidden {
+  opacity: 0;
+}
+.create-frames .create-frame-0 {
+  background-position: 0 0%;
+}
+.create-frames .create-frame-1 {
+  background-position: 0 9.090909%;
+}
+.create-frames .create-frame-2 {
+  background-position: 0 18.181818%;
+}
+.create-frames .create-frame-3 {
+  background-position: 0 27.272727%;
+}
+.create-frames .create-frame-4 {
+  background-position: 0 36.363636%;
+}
+.create-frames .create-frame-5 {
+  background-position: 0 45.454545%;
+}
+.create-frames .create-frame-6 {
+  background-position: 0 54.545455%;
+}
+.create-frames .create-frame-7 {
+  background-position: 0 63.636364%;
+}
+.create-frames .create-frame-8 {
+  background-position: 0 72.727273%;
+}
+.create-frames .create-frame-9 {
+  background-position: 0 81.818182%;
+}
+.create-frames .create-frame-10 {
+  background-position: 0 90.909091%;
+}
+.create-frames .create-frame-11 {
+  background-position: 0 100%;
+}
 .simulate-line {
   stroke: #222;
   stroke-width: 2px;
@@ -294,8 +370,8 @@ body {
   overflow: hidden;
 }
 .bg-gradients {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#83d1eb), color-stop(#be68a9), color-stop(#ec3a74), color-stop(#f49567), color-stop(#be68a9), color-stop(#fbecb6), color-stop(#64a8cb), color-stop(#c7717c), color-stop(#b84069), to(#8e549c));
-  background-image: linear-gradient(to bottom, #83d1eb, #be68a9, #ec3a74, #f49567, #be68a9, #fbecb6, #64a8cb, #c7717c, #b84069, #8e549c);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#83d1eb), color-stop(#be68a9), color-stop(#ec3a74), color-stop(#f49567), color-stop(#fbecb6), color-stop(#64a8cb), color-stop(#be68a9), color-stop(#c7717c), color-stop(#b84069), to(#8e549c));
+  background-image: linear-gradient(to bottom, #83d1eb, #be68a9, #ec3a74, #f49567, #fbecb6, #64a8cb, #be68a9, #c7717c, #b84069, #8e549c);
   position: absolute;
   top: 0;
   left: 0;
