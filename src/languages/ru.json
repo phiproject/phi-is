@@ -2,27 +2,31 @@
    "header":{
       "left_links":[
          {
-            "title":"Create",
+            "title":"О нас",
+            "url":"#about"
+         },
+         {
+            "title":"Создавайте",
             "url":"#create"
          },
          {
-            "title":"Simulate",
+            "title":"Моделируйте",
             "url":"#simulate"
          },
          {
-            "title":"Invest",
+            "title":"Инвестируйте",
             "url":"#invest"
          },
          {
-            "title":"Reorganize",
+            "title":"Меняйтесь",
             "url":"#reorganize"
+         },
+         {
+            "title":"контакт",
+            "url":"#contact"
          }
       ],
       "right_links":[
-         {
-            "title":"Contact",
-            "url":"#contact"
-         },
          {
             "title":"Slack",
             "url":""
@@ -38,27 +42,26 @@
       ]
    },
    "hero":{
-      "logo": "logo.svg",
+      "title": "Привет, я Phi!",
       "adjectives": [
          "Create",
          "Simulate",
          "Invest",
          "Reorganize"
       ],
-      "title": "Проект Phi",
-      "subtitle": "Токсизированная ответственность",
+      "subtitle": "Ваш помощник в мире возобновляемых источников энергии",
       "buttons": [
          {
-            "title":"Pink Paper",
-            "subtitle":"Read the",
+            "title":"Читайте",
+            "subtitle":"Pink Paper",
             "alt":"Click to read the Pink Paper",
             "target":"",
             "url":"",
             "type":""
          },
          {
-            "title":"Simulator",
-            "subtitle":"Use Phi",
+            "title":"Запустить",
+            "subtitle":"симулятор",
             "alt":"Click to use the Phi Simulator",
             "target":"",
             "url":"",
@@ -67,8 +70,8 @@
       ]
    },
    "footer":{
-      "description":"Phi was developed as part of the New Normal education programme at Strelka Institute for Media, Architecture and Design",
-      "team_title": "Team Members",
+      "description":"Проект был разработан в рамках образовательной программы Новая Норма в Институте Медиа, Архитектуры и Дизайна \"Стрелка\"",
+      "team_title":"Участники команды",
       "team":[
          {
             "name":"Calum Bowden",
@@ -96,92 +99,76 @@
             "url":""
          }
       ],
-      "developers_title":"Developers",
-      "developers":[
+      "contributors_title":"При содействии",
+      "contributors":[
          {
             "name":"Alexander Ayoupov",
-            "job":"Simulation",
+            "job":"разработчик Sim Environment",
             "url":""
          },
          {
             "name":"Dan McHugh",
-            "job":"Website",
+            "job":"разработчик Website",
             "url":"https://danmchugh.co.uk"
+         },
+         {
+            "name":"Kristina Lolob",
+            "job":"перевод",
+            "url":""
          }
-      ],
-      "text_links":[
-         {
-            "title": "Pink Paper",
-            "url": ""
-         },
-         {
-            "title": "Phi Environment",
-            "url": ""
-         },
-         {
-            "title": "English",
-            "url": "/en/"
-         },
-         {
-            "title": "Русский",
-            "url": "/ru/"
-         }
-      ],
-      "image_links":[]
+      ]
    },
    "sections":[
       {
          "id": "about",
          "chat":[
-            "What is Phi?",
-            "Phi is a simulation environment that enables people to explore the potential effects of decentralised energy, currency, and governence on their lives."
+            "Что такое Phi?",
+            "Phi - это онлайн-среда для управления системами возобновляемых энергоресурсов"
          ]
       },
       {
          "id": "create",
          "chat":[
-            "Design networks of renewable energy sources.",
-            "Phi enables you to develop the conditions for renewable energy in a community-based fashion",
-            "The Phi ENV interface offers tools for designing smart contracts, managing tokenized assets, and visualising energy transactions recorded on a public blockchain.",
-            "..."
+            "Участвуйте в создании сети чистой энергии",
+            "Как правило, промышленные программы для управления энергоресурсами требуют специальных знаний и навыков работы со сложными интерфейсами, и поэтому не подходят для локальных производителей и потребителей. Phi заменяет непонятные панели инструментов умным чат-ботом.",
+            "Многопользовательское приложение Phi позволит вам стать частью сети производителей возобновляемой энергии, заключать умные договоры, управлять токенизированными активами, а также визуализировать валютные и энергетические транзакции, регистрируемые в открытом реестре."
          ]
       },
       {
          "id": "simulate",
          "chat":[
-            "Simulate new models of exchange.",
-            "We believe that simulation should play a crucial role in shaping the future of blockchain networks",
-            "Phi Sim allows you to test peer-to-peer networks in real-time data conditions",
-            "..."
+            "Взгляните на будущее возобновляемых источников энергии",
+            "С помощью Phi можно смоделировать виртуальную систему обмена энергоресурсами между пользователями. Phi помогает принимать правильные решения и создает основу для будущих проектов",
+            "Найдите баланс между новыми генераторами энергии и потребителями для создания надёжной энергетической системы."
          ]
       },
       {
          "id": "invest",
          "chat":[
-            "Invest in peer-to-peer structure.",
-            "After a creation phase, Phi will become a self-governing organisation to facilitate financial, technical and social investment in renewable energy and biosensing."
+            "Инвестируйте в децентрализованные энергосистемы",
+            "Энергоресуры становятся ценным источником данных благодаря токенам",
+            "По завершении стадии разработки системы, Phi становится полноценной организацией, которая управляется на основе выпущенных токенов и упрощает финансовое, технологическое и общественное инвестирование в систему возобновляемых источников энергии"
          ]
       },
       {
          "id": "reorganize",
          "chat":[
-            "Redefine community and organizations.",
-            "Codify and incentivise social relationships through renewable energy",
-            "The transition from fossil fuels requires radically new ways of organizing society",
-            "Phi re-establishes social obligation in the context of 'trustless' blockchain networks"
+            "Объединяйтесь вокруг возобновляемых источников энергии",
+            "Для перехода от ископаемого топлива к новым источникам энергии требуется новая организация  ресурсов",
+            "Phi предлагает структуру управления, в основе которой лежит активное взаимодействие пользователей. Новые участники без труда могут присоединиться к PHI, увеличивая таким образом ценность возобновляемой энергии."
          ]
       },
       {
          "id": "contact",
          "chat":[
-            "Get in touch",
-            "Say hi to contact@phi.is",
-            "Join our slack at phiprojectteam.slack.com",
-            "Develop phi together: gitub.com/srelka-2017/phi"
+            "Свяжитесь с нами",
+            "Напишите нам на contact@phi.is",
+            "Присоединяйтесь к нашей группе в Slack: phiprojectteam.slack.com",
+            "Будущим разработчикам Phi: gitub.com/srelka-2017/phi"
          ],
          "buttons": [
             {
-               "title":"Read",
+               "title":"Читайте",
                "subtitle":"Pink Paper",
                "alt":"Click to read the Pink Paper",
                "target":"",
@@ -189,8 +176,8 @@
                "type":""
             },
             {
-               "title":"Play",
-               "subtitle":"Simulator",
+               "title":"Запустить",
+               "subtitle":"симулятор",
                "alt":"Click to use the Phi Simulator",
                "target":"",
                "url":"",

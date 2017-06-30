@@ -2,6 +2,10 @@
    "header":{
       "left_links":[
          {
+            "title":"About",
+            "url":"#about"
+         },
+         {
             "title":"Create",
             "url":"#create"
          },
@@ -16,13 +20,13 @@
          {
             "title":"Reorganize",
             "url":"#reorganize"
-         }
-      ],
-      "right_links":[
+         },
          {
             "title":"Contact",
             "url":"#contact"
-         },
+         }
+      ],
+      "right_links":[
          {
             "title":"Slack",
             "url":""
@@ -38,15 +42,14 @@
       ]
    },
    "hero":{
-      "logo": "logo.svg",
-      "title": "Hi we're Phi.",
+      "title": "Hello I’m Phi.",
       "adjectives": [
          "Create",
          "Simulate",
          "Invest",
          "Reorganize"
       ],
-      "subtitle": " the future of energy.",
+      "subtitle": "Your interface to peer-to-peer energy",
       "buttons": [
          {
             "title":"Read",
@@ -67,7 +70,7 @@
       ]
    },
    "footer":{
-      "description":"Phi was developed as part of the New Normal education programme at Strelka Institute for Media, Architecture and Design",
+      "description":"Phi was developed as part of the New Normal education programme at Strelka Institute for Media, Architecture and Design.",
       "team_title": "Team Members",
       "team":[
          {
@@ -96,17 +99,22 @@
             "url":""
          }
       ],
-      "developers_title":"Developers",
-      "developers":[
+      "contributors_title":"Contributors",
+      "contributors":[
          {
             "name":"Alexander Ayoupov",
-            "job":"Simulation",
+            "job":"Simulation Developer",
             "url":""
          },
          {
             "name":"Dan McHugh",
-            "job":"Website",
+            "job":"Website Developer",
             "url":"https://danmchugh.co.uk"
+         },
+         {
+            "name":"Kristina Lolob",
+            "job":"Translation",
+            "url":""
          }
       ],
       "text_links":[
@@ -134,41 +142,39 @@
          "id": "about",
          "chat":[
             "What is Phi?",
-            "Phi is a simulation environment that enables people to explore the potential effects of decentralised energy, currency, and governence on their lives."
+            "Phi provides an environment for designing, simulating and managing renewable energy resources and biosensors."
          ]
       },
       {
          "id": "create",
          "chat":[
-            "Design networks of renewable energy sources.",
-            "Phi enables you to develop the conditions for renewable energy in a community-based fashion",
-            "The Phi ENV interface offers tools for designing smart contracts, managing tokenized assets, and visualising energy transactions recorded on a public blockchain.",
-            "..."
+            "Build network infrastructure.",
+            "By folding complex functionality from industrial energy management software into a intuitive chatbot interface, Phi allows anyone to take control over their energy production and consumption.",
+            "A multi-user application provides tools for joining the network, designing smart contracts, managing tokenized assets, and visualising energy transactions recorded in a public ledger."
          ]
       },
       {
          "id": "simulate",
          "chat":[
-            "Simulate new models of exchange.",
-            "We believe that simulation should play a crucial role in shaping the future of blockchain networks",
-            "Phi Sim allows you to test peer-to-peer networks in real-time data conditions",
-            "..."
+            "Reimagine renewable energy.",
+            "Phi allows you to simulate peer-to-peer energy systems, assisting decision making processes and creating value for new projects.",
+            "Add generators and peers to the map to see what is needed to build a reliable source of electrictricity."
          ]
       },
       {
          "id": "invest",
          "chat":[
             "Invest in peer-to-peer structure.",
-            "After a creation phase, Phi will become a self-governing organisation to facilitate financial, technical and social investment in renewable energy and biosensing."
+            "Tokens redefine energy as a scarce data resource.",
+            "After a creation phase, Phi becomes a token-governed organization to facilitate financial, technical and social investment in renewable energy and biosensing."
          ]
       },
       {
          "id": "reorganize",
          "chat":[
-            "Redefine community and organizations.",
-            "Codify and incentivise social relationships through renewable energy",
-            "The transition from fossil fuels requires radically new ways of organizing society",
-            "Phi re-establishes social obligation in the context of 'trustless' blockchain networks"
+            "Organize around renewable energy.",
+            "The transition from fossil fuels requires new ways of coordinating human and non-human actors.",
+            "Phi proposes a governance structure based on active peer-to-peer relationships. This makes it easy to join the Phi network and share the value of renewable energy."
          ]
       },
       {
