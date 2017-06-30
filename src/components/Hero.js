@@ -11,7 +11,7 @@ class Hero extends Component {
    componentDidMount() {
       if (Settings.animation.adjectives) {
          this.animateTitle()
-         this.animateAdjectives()
+         // this.animateAdjectives()
       }
    }
 
@@ -73,7 +73,7 @@ class Hero extends Component {
                </div>
                <div id="hero-2">
                   <h1 className="rellax" data-rellax-speed="1">
-                     <span id="adjectives">{data.adjectives.map((adjective,i)=><div className="adjective" key={i}>{adjective}</div>)}</span>
+                     {/* <span id="adjectives">{data.adjectives.map((adjective,i)=><div className="adjective" key={i}>{adjective}</div>)}</span> */}
                      {data.subtitle}
                   </h1>
                </div>

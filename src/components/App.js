@@ -10,7 +10,7 @@ import Footer from './Footer'
 // Import Animation timline controls
 // import { TimelineMax } from 'gsap'
 import ScrollMagic from 'scrollmagic'
-import Rellax from 'rellax'
+// import Rellax from 'rellax'
 
 // Import Languages
 import en from '../languages/en.json'
@@ -37,7 +37,7 @@ class App extends Component {
   componentDidMount() {
     // Setup parallax scrolling - use .rellax on elements
     if (Settings.animation.on && Settings.animation.parallax) {
-      this.rellax = new Rellax('.rellax',{center: true});
+      // this.rellax = new Rellax('.rellax',{center: true});
     }
   }
 

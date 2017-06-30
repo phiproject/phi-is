@@ -24,8 +24,8 @@ class Footer extends Component {
          description,
          team,
          team_title,
-         developers,
-         developers_title,
+         contributors,
+         contributors_title,
          // text_links,
          // image_links,
       } = this.props.data
@@ -35,7 +35,7 @@ class Footer extends Component {
 
             <div className="col s12 m6">
 
-               <div className="message footer__box footer__description">{description}</div>
+               <div className="message message--blue footer__box footer__description">{description}</div>
 
                <div className="message footer__box footer__team">
                   <div className="footer__box__title">{ team_title }</div>
@@ -43,8 +43,8 @@ class Footer extends Component {
                </div>
 
                <div className="message footer__box footer__developers">
-                  <div className="footer__box__title">{ developers_title }</div>
-                  { developers.map((link,i) => this.renderPerson(link,i)) }
+                  <div className="footer__box__title">{ contributors_title }</div>
+                  { contributors.map((link,i) => this.renderPerson(link,i)) }
                </div>
 
             </div>

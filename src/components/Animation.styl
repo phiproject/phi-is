@@ -6,12 +6,16 @@
    justify-content center // horizontal
    align-items center // vertical
 
+   @media only screen and (max-width: 601px)
+      min-height 200px
+      margin-top 1em
+
 
 // General Diagram styles
 
 .diagram
    position relative
-   width 90%
+   width 78%
    img
       width 100%
    @media only screen and (max-width: 601px)
@@ -30,6 +34,9 @@
 .about-images
    position relative
    top -50px
+   @media only screen and (max-width: 601px)
+      top 0
+
    img
       width 30%
       position relative
@@ -49,44 +56,43 @@
 // Create
 
 .create-frames
-   position relative
-   text-align center !important
-   margin-top -150px
-
    .create-frame
-      background-image url('../images/create-frames-stacked-min.png')
-      max-width 100%
-      background-size 100%
-      display block
-      position absolute
-
       &.hidden
          opacity 0
 
-   .create-frame-0
-      background-position 0 0%
-   .create-frame-1
-      background-position 0 9.090909%
-   .create-frame-2
-      background-position 0 18.181818%
-   .create-frame-3
-      background-position 0 27.272727%
-   .create-frame-4
-      background-position 0 36.363636%
-   .create-frame-5
-      background-position 0 45.454545%
-   .create-frame-6
-      background-position 0 54.545455%
-   .create-frame-7
-      background-position 0 63.636364%
-   .create-frame-8
-      background-position 0 72.727273%
-   .create-frame-9
-      background-position 0 81.818182%
-   .create-frame-10
-      background-position 0 90.909091%
-   .create-frame-11
-      background-position 0 100%
+   //    background-image url('../images/create-frames-stacked-min.png')
+   //    max-width 100%
+   //    background-size 100%
+   //    display block
+   //    position absolute
+   //
+   //    &.hidden
+   //       opacity 0
+   //
+   // .create-frame-0
+   //    background-position 0 0%
+   // .create-frame-1
+   //    background-position 0 9.090909%
+   // .create-frame-2
+   //    background-position 0 18.181818%
+   // .create-frame-3
+   //    background-position 0 27.272727%
+   // .create-frame-4
+   //    background-position 0 36.363636%
+   // .create-frame-5
+   //    background-position 0 45.454545%
+   // .create-frame-6
+   //    background-position 0 54.545455%
+   // .create-frame-7
+   //    background-position 0 63.636364%
+   // .create-frame-8
+   //    background-position 0 72.727273%
+   // .create-frame-9
+   //    background-position 0 81.818182%
+   // .create-frame-10
+   //    background-position 0 90.909091%
+   // .create-frame-11
+   //    background-position 0 100%
 
 
 // Simulate
@@ -109,17 +115,7 @@
 // Reorganize
 
 .reorganize-frames
-   position relative
-   text-align center !important
-   // margin-top -150px
-
    .reorg-frame
-      // background-image url('../images/create-frames-stacked-min.png')
-      // max-width 100%
-      // background-size 100%
-      // display block
-      // position absolute
-
       &.hidden
          opacity 0
 
@@ -135,3 +131,11 @@
       position relative
       top 100px
       left -50px
+
+   @media only screen and (max-width: 601px)
+      .svg-play
+         top 0
+         left 0
+      .svg-read
+         top 100px
+         left 0

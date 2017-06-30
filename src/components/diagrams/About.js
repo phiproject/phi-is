@@ -33,13 +33,18 @@ class About extends Component {
       // scale: 0.8,
       ease: Sine.easeOut,
       delay: delayInterval,
-   }, stagger)
+   }, stagger*2)
+   .from('#about-arrow',0.5,{
+      opacity: 0,
+      ease: Sine.easeOut,
+   }, speed*2)
    .staggerTo('.about-image',speed*3,{
       y: '+=20',
       ease: Sine.easeInOut,
       repeat: -1,
       yoyo: true,
    }, stagger*3)
+
 
     // tl.to('.about-image', 2, {
     //   bezier:{
@@ -70,6 +75,11 @@ class About extends Component {
                     <image className="about-image" id="about-simulate" x="1325" y="460" width="737" height="341" xlinkHref={simulate_img}></image>
                     <image className="about-image" id="about-invest" x="1184" y="886" width="738" height="380" xlinkHref={invest_img}></image>
                     <image className="about-image" id="about-reorganize" x="406" y="1020" width="681" height="338" xlinkHref={reorganize_img}></image>
+                    <g id="about-arrow" transform="translate(406.000000, 87.000000)">
+                        <path d="M82.3724698,871.327347 C30.3936453,785.970612 0.51034889,685.572245 0.51034889,578.287347 C0.51034889,272.924082 242.655605,24.2840816 545.473008,13.9542857" id="Shape" stroke="#000000" strokeWidth="2"></path>
+                        <polygon id="Shape" fill="#000000" fill-rule="nonzero" points="91.790236 860.816327 92.8769013 887.818776 68.7891533 875.133061"></polygon>
+                        <polygon id="Shape" fill="#000000" fill-rule="nonzero" points="541.85079 27.7273469 564.851873 13.5918367 541.126347 0.724897959"></polygon>
+                    </g>
                 </g>
             </g>
         </svg>
