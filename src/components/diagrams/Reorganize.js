@@ -23,7 +23,7 @@ class Reorganize extends Component {
     // Setup Timeline
     const tl = new TimelineMax({ delay: 0.2 })
     const frames = document.getElementsByClassName('reorg-frame')
-    const frames_speed = 0.11*3 // 9 frames divided by 1 second
+    const frames_speed = 0.3
     const frames_delay = 0.1*2
     const floor_speed = 1
     const floor_delay = 0.5
