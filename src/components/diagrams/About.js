@@ -77,8 +77,8 @@ class About extends Component {
                     <image className="about-image" id="about-reorganize" x="406" y="1020" width="681" height="338" xlinkHref={reorganize_img}></image>
                     <g id="about-arrow" transform="translate(406.000000, 87.000000)">
                         <path d="M82.3724698,871.327347 C30.3936453,785.970612 0.51034889,685.572245 0.51034889,578.287347 C0.51034889,272.924082 242.655605,24.2840816 545.473008,13.9542857" id="Shape" stroke="#000000" strokeWidth="2"></path>
-                        <polygon id="Shape" fill="#000000" fill-rule="nonzero" points="91.790236 860.816327 92.8769013 887.818776 68.7891533 875.133061"></polygon>
-                        <polygon id="Shape" fill="#000000" fill-rule="nonzero" points="541.85079 27.7273469 564.851873 13.5918367 541.126347 0.724897959"></polygon>
+                        <polygon id="Shape" fill="#000000" fillRule="nonzero" points="91.790236 860.816327 92.8769013 887.818776 68.7891533 875.133061"></polygon>
+                        <polygon id="Shape" fill="#000000" fillRule="nonzero" points="541.85079 27.7273469 564.851873 13.5918367 541.126347 0.724897959"></polygon>
                     </g>
                 </g>
             </g>

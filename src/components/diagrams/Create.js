@@ -3,15 +3,15 @@ import Diagram from './Diagram'
 
 import { TimelineMax } from 'TweenMax'
 
-import frame_1 from '../../images/create/create-frame-1.png'
-import frame_2 from '../../images/create/create-frame-2.png'
-import frame_3 from '../../images/create/create-frame-3.png'
-import frame_4 from '../../images/create/create-frame-4.png'
-import frame_5 from '../../images/create/create-frame-5.png'
-import frame_6 from '../../images/create/create-frame-6.png'
-import frame_7 from '../../images/create/create-frame-7.png'
-import frame_8 from '../../images/create/create-frame-8.png'
-import frame_9 from '../../images/create/create-frame-9.png'
+import frame_01 from '../../images/create/create-frame-01.png'
+import frame_02 from '../../images/create/create-frame-02.png'
+import frame_03 from '../../images/create/create-frame-03.png'
+import frame_04 from '../../images/create/create-frame-04.png'
+import frame_05 from '../../images/create/create-frame-05.png'
+import frame_06 from '../../images/create/create-frame-06.png'
+import frame_07 from '../../images/create/create-frame-07.png'
+import frame_08 from '../../images/create/create-frame-08.png'
+import frame_09 from '../../images/create/create-frame-09.png'
 import frame_10 from '../../images/create/create-frame-10.png'
 import frame_11 from '../../images/create/create-frame-11.png'
 
@@ -55,15 +55,15 @@ class Create extends Component {
               <defs></defs>
               <g id="Create" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
                   <g id="create-frames">
-                      <image className="create-frame create-frame-1"  x="0" y="0" width="1536" height="874" xlinkHref={frame_1}></image>
-                      <image className="create-frame create-frame-2"  x="0" y="0" width="1536" height="874" xlinkHref={frame_2}></image>
-                      <image className="create-frame create-frame-3"  x="0" y="0" width="1536" height="874" xlinkHref={frame_3}></image>
-                      <image className="create-frame create-frame-4"  x="0" y="0" width="1536" height="874" xlinkHref={frame_4}></image>
-                      <image className="create-frame create-frame-5"  x="0" y="0" width="1536" height="874" xlinkHref={frame_5}></image>
-                      <image className="create-frame create-frame-6"  x="0" y="0" width="1536" height="874" xlinkHref={frame_6}></image>
-                      <image className="create-frame create-frame-7"  x="0" y="0" width="1536" height="874" xlinkHref={frame_7}></image>
-                      <image className="create-frame create-frame-8"  x="0" y="0" width="1536" height="874" xlinkHref={frame_8}></image>
-                      <image className="create-frame create-frame-9"  x="0" y="0" width="1536" height="874" xlinkHref={frame_9}></image>
+                      <image className="create-frame create-frame-1"  x="0" y="0" width="1536" height="874" xlinkHref={frame_01}></image>
+                      <image className="create-frame create-frame-2"  x="0" y="0" width="1536" height="874" xlinkHref={frame_02}></image>
+                      <image className="create-frame create-frame-3"  x="0" y="0" width="1536" height="874" xlinkHref={frame_03}></image>
+                      <image className="create-frame create-frame-4"  x="0" y="0" width="1536" height="874" xlinkHref={frame_04}></image>
+                      <image className="create-frame create-frame-5"  x="0" y="0" width="1536" height="874" xlinkHref={frame_05}></image>
+                      <image className="create-frame create-frame-6"  x="0" y="0" width="1536" height="874" xlinkHref={frame_06}></image>
+                      <image className="create-frame create-frame-7"  x="0" y="0" width="1536" height="874" xlinkHref={frame_07}></image>
+                      <image className="create-frame create-frame-8"  x="0" y="0" width="1536" height="874" xlinkHref={frame_08}></image>
+                      <image className="create-frame create-frame-9"  x="0" y="0" width="1536" height="874" xlinkHref={frame_09}></image>
                       <image className="create-frame create-frame-10" x="0" y="0" width="1536" height="874" xlinkHref={frame_10}></image>
                       <image className="create-frame create-frame-11" x="0" y="0" width="1536" height="874" xlinkHref={frame_11}></image>
                   </g>
