@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Settings from '../settings'
-import { TimelineMax } from 'gsap'
+import { TimelineMax } from 'TweenMax'
 import 'ScrollToPlugin'
 
 class Header extends Component {

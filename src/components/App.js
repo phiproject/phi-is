@@ -8,7 +8,7 @@ import Sections from './Sections'
 import Footer from './Footer'
 
 // Import Animation timline controls
-// import { TimelineMax } from 'gsap'
+// import { TimelineMax } from 'TweenMax'
 import ScrollMagic from 'scrollmagic'
 // import Rellax from 'rellax'
 

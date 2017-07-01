@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Diagram from './Diagram'
 
-import { TimelineMax, Sine } from 'gsap'
+import { TimelineMax, Sine } from 'TweenMax'
 
 import floor_top from '../../images/reorg/floor_top.png'
 import floor_left from '../../images/reorg/floor_left.png'

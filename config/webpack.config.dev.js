@@ -99,7 +99,6 @@ module.exports = {
       "ScrollMagic": path.resolve('node_modules', 'scrollmagic/scrollmagic/uncompressed/ScrollMagic.js'),
       "animation.gsap": path.resolve('node_modules', 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js'),
       "debug.addIndicators": path.resolve('node_modules', 'scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js'),
-      // "DrawSVGPlugin": path.resolve(__dirname, '../src/vendor/DrawSVGPlugin.js')
     },
     plugins: [
       // Prevents users from importing files from outside of src/ (or node_modules/).

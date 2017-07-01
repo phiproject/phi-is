@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Settings from '../settings'
 
-import { TimelineMax, Sine } from 'gsap'
+import { TimelineMax, Sine } from 'TweenMax'
 import ScrollMagic from 'scrollmagic'
 import 'animation.gsap'
 import 'debug.addIndicators'

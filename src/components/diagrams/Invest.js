@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Diagram from './Diagram'
 
 // import anime from 'animejs'
-import { TimelineMax, Quart } from 'gsap'
+import { TimelineMax, Quart } from 'TweenMax'
 
 class Invest extends Component {
 

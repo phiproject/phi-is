@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Diagram from './Diagram'
 
-import { TimelineMax } from 'gsap'
+import { TimelineMax } from 'TweenMax'
 
 import frame_1 from '../../images/create/create-frame-1.png'
 import frame_2 from '../../images/create/create-frame-2.png'
