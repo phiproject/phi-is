@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Settings from '../settings'
 
-import { TimelineMax, TweenLite, Sine } from 'gsap'
+import { TimelineMax, Sine } from 'gsap'
 import ScrollMagic from 'scrollmagic'
 import 'animation.gsap'
 import 'debug.addIndicators'
@@ -25,7 +25,7 @@ function appear(id, section) {
 
   // Fade background gradients
   if (Settings.animation.gradients) {
-    TweenLite.set('.bg-gradient-header', {css:{opacity: 1}})
+    tl.set('.bg-gradient-header', {css:{opacity: 1}})
     tl.to('.bg-gradient-'+section,1,{
       css: {
         opacity: 1,

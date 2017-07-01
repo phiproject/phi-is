@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Settings from '../settings'
-import { TweenLite } from 'gsap'
+import { TimelineMax } from 'gsap'
 import 'ScrollToPlugin'
 
 class Header extends Component {
@@ -9,7 +9,7 @@ class Header extends Component {
    scrollTo = (e, url) => {
       if (Settings.animation.scrollTo && url.includes('#')) {
          e.preventDefault()
-         TweenLite.to(window, 1.75, {scrollTo: url})
+         new TimelineMax().to(window, 1.75, {scrollTo: url})
       }
    }
 

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Settings from '../settings'
 
-import { TimelineMax, TweenMax, Sine } from 'gsap'
+import { TimelineMax, Sine } from 'gsap'
 
 import IconRead from './icons/IconRead'
 import IconPlay from './icons/IconPlay'
@@ -16,7 +16,8 @@ class Hero extends Component {
    }
 
    animateTitle = () => {
-      TweenMax.staggerFrom('#hero-1, #hero-2, #hero-3', 0.8, {
+      new TimelineMax()
+      .staggerFrom('#hero-1, #hero-2, #hero-3', 0.8, {
          opacity: 0,
          y: '+=20px',
          delay: 0.5,
