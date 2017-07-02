@@ -436,16 +436,15 @@ body {
 }
 .about-images {
   position: relative;
-  top: -50px;
 }
 @media only screen and (max-width: 601px) {
   .about-images {
     top: 0;
   }
 }
-.about-images img {
-  width: 30%;
-  position: relative;
+.about-images .about-image {
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
 }
 .about-images .about-create {
   top: -150px;
