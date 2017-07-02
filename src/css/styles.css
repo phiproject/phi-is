@@ -417,6 +417,7 @@ body {
 .diagram {
   position: relative;
   width: 78%;
+  max-width: 600px;
 }
 .diagram img {
   width: 100%;
