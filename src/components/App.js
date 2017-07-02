@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Settings from '../settings'
+import ReactGA from 'react-ga'
 
 // This component:
 // 1. Sets up the basic page structure - kind of like your index.html used to.
@@ -35,6 +36,9 @@ class App extends Component {
 
     // Setup controller for scroll animations
     this.controller = new ScrollMagic.Controller();
+
+    ReactGA.initialize('UA-30021343-3');
+    ReactGA.pageview(window.location.pathname);
   }
 
   render() {
