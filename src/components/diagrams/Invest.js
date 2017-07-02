@@ -16,11 +16,11 @@ class Invest extends Component {
     // Add Timeline animations
     groups.forEach(function(group,i){
       tl.staggerFrom('.invest-cubes-'+group+' .invest-cube',speed,{
-        y: '+=10',
+        //  y: '+=10', // re-enable to stagger
         opacity: 0,
         ease: Quart.easeInOut,
         delay: (!group===1) ? delayInterval : 0.2,
-      }, 0.05)
+      }, 0) // set to 0.5 to stagger
     })
 
     // Return the timeline so DiagramWaypoint can trigger it.
