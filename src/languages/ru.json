@@ -20,13 +20,13 @@
          {
             "title":"Меняйтесь",
             "url":"#reorganize"
-         },
-         {
-            "title":"контакт",
-            "url":"#contact"
          }
       ],
       "right_links":[
+         {
+            "title":"контакт",
+            "url":"#contact"
+         },
          {
             "title":"Slack",
             "url":""
