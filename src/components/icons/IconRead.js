@@ -1,5 +1,9 @@
 import React, { Component } from 'react'
 
+// This is pretty an SVG file dumped into a React component, with a few adjustments:
+// React components can't contain hyphenated properties e.g: 'stroke-width' must be 'strokeWidth'.
+// If you feed this component a 'title', and 'subtitle', it will render into the diagram.
+
 class IconRead extends Component {
    render() {
       const { title, subtitle } = this.props
@@ -32,10 +36,6 @@ class IconRead extends Component {
              </defs>
              <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
                  <g id="read">
-                     {/* <rect className="bottom_shape read_bottom_shape_shadow" fillOpacity="0.5" fill="#000000" fillRule="nonzero" filter="url(#filter-1)" transform="translate(132.158930, 102.861600) rotate(45.000000) translate(-132.158930, -102.861600) " x="75.7094714" y="46.4121414" width="112.898917" height="112.898917"></rect>
-                     <rect className="bottom_shape read_bottom_shape" fill="#E4F5FD" fillRule="nonzero" transform="translate(131.158930, 100.861600) rotate(45.000000) translate(-131.158930, -100.861600) " x="74.7094714" y="44.4121414" width="112.898917" height="112.898917"></rect>
-                     <rect className="top_shape read_top_shape_shadow" fillOpacity="0.5" fill="#000000" fillRule="nonzero" filter="url(#filter-2)" transform="translate(100.867600, 102.841570) rotate(45.000000) translate(-100.867600, -102.841570) " x="44.4181414" y="46.3921114" width="112.898917" height="112.898917"></rect>
-                     <rect className="top_shape read_top_shape" fill="#D0D5EC" fillRule="nonzero" transform="translate(98.867600, 100.841570) rotate(45.000000) translate(-98.867600, -100.841570) " x="42.4181414" y="44.3921114" width="112.898917" height="112.898917"></rect> */}
                      <polygon className="bottom_shape read_bottom_shape_shadow" fillOpacity="0.5" fill="#000000" fillRule="nonzero" filter="url(#filter-1)" points="132.15893 23.03001 211.99052 102.8616 132.15893 182.69319 52.32734 102.8616"></polygon>
                      <polygon className="bottom_shape read_bottom_shape" fill="#E4F5FD" fillRule="nonzero" points="131.15893 21.03001 210.99052 100.8616 131.15893 180.69319 51.32734 100.8616"></polygon>
                      <polygon className="top_shape read_top_shape_shadow" fillOpacity="0.5" fill="#000000" fillRule="nonzero" filter="url(#filter-2)" points="100.8676 23.00998 180.69919 102.84157 100.8676 182.67316 21.03601 102.84157"></polygon>

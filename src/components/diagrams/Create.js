@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
-import Diagram from './Diagram'
+import DiagramWaypoint from './DiagramWaypoint'
 
+// Import animation library
 import { TimelineMax } from 'TweenMax'
 
+// Import images
 import frame_01 from '../../images/create/create-frame-01.png'
 import frame_02 from '../../images/create/create-frame-02.png'
 import frame_03 from '../../images/create/create-frame-03.png'
@@ -25,9 +27,10 @@ class Create extends Component {
     const speed = 0.3
     const delay = 0.1
 
-    // Add animations
+    // Set frames to hidden initally - don't set this in the stylesheet or it won't appear on mobile.
     tl.set(elements,{className:'+=hidden'})
 
+    // Add animations to timeline
     for (let i=0; i < length; i++) {
        tl.to(elements[i], speed, {
           className: '-=hidden',
@@ -35,22 +38,16 @@ class Create extends Component {
        })
     }
 
+    // Return the timeline so DiagramWaypoint can trigger it.
     return tl
   }
 
   render() {
-    const frames = 11
-    const frameImgs = []
-    for (let i=0; i<=frames; i++) {
-      frameImgs.push(i)
-    }
-
     return (
-      <Diagram section={this.props.section} animate={this.animate}>
+      <DiagramWaypoint section={this.props.section} animate={this.animate}>
 
         <div className="create-frames">
 
-          {/* {frameImgs.map((i) => <img key={i} className={`create-frame create-frame-${i}`} alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAuIAAAGjAQMAAABTweIoAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAD1JREFUeNrtwQENAAAAwqD3T20ON6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF4MmdoAAZKFgs8AAAAASUVORK5CYII=" />)} */}
           <svg className="create-svg" viewBox="0 0 1536 874" version="1.1">
               <defs></defs>
               <g id="Create" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
@@ -70,10 +67,9 @@ class Create extends Component {
               </g>
           </svg>
 
-
         </div>
 
-      </Diagram>
+      </DiagramWaypoint>
     )
   }
 }

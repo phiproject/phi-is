@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import Diagram from './Diagram'
+import DiagramWaypoint from './DiagramWaypoint'
 
-// import anime from 'animejs'
+// Import animation library
 import { TimelineMax, Quart } from 'TweenMax'
 
 class Invest extends Component {
@@ -23,21 +23,13 @@ class Invest extends Component {
       }, 0.05)
     })
 
-    // tl.staggerTo('.invest-cube',speed/2,{
-    //   y: '+=20',
-    //   opacity: 0,
-    //   ease: Quart.easeInOut,
-    //   delay: delayInterval*(groups.length+2),
-    // }, 0.02)
-
-    // Return the timeline
+    // Return the timeline so DiagramWaypoint can trigger it.
     return tl
   }
 
   render() {
     return (
-      <Diagram section={this.props.section} animate={this.animate}>
-
+      <DiagramWaypoint section={this.props.section} animate={this.animate}>
 
         <svg className="invest-svg" viewBox="0 0 767 409" version="1.1">
             <defs></defs>
@@ -251,7 +243,7 @@ class Invest extends Component {
             </g>
         </svg>
 
-      </Diagram>
+      </DiagramWaypoint>
     )
   }
 }

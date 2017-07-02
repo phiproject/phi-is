@@ -1,0 +1,39 @@
+.Navigation
+   text-align center
+   margin-bottom 2em
+   position fixed
+   top 0
+   left 0
+   width 100%
+   z-index 50
+
+.navigation__link
+   color white
+   display inline
+
+   &:first-child
+      margin-left 0
+
+   &:last-child
+      margin-right 0
+
+      &:after
+         content ''
+         margin 0
+         padding 0
+
+   a
+      transition all fast ease-in-out
+      color white
+      border-radius radius
+      padding 0.75em
+      // transform translateY(0px)
+      &:hover
+         // transform translateX(5px)
+         // border-bottom 2px solid white
+         background-color translucent_blue
+
+   // // Uncomment this to add a separator
+   // &:after
+   //    content '|'
+   //    padding-left 0.25em

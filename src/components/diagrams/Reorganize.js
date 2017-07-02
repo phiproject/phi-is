@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
-import Diagram from './Diagram'
+import DiagramWaypoint from './DiagramWaypoint'
 
+// Import animation library
 import { TimelineMax, Sine } from 'TweenMax'
 
+// Import images
 import floor_top from '../../images/reorg/floor_top.png'
 import floor_left from '../../images/reorg/floor_left.png'
 import floor_right from '../../images/reorg/floor_right.png'
@@ -28,9 +30,10 @@ class Reorganize extends Component {
     const floor_speed = 1
     const floor_delay = 0.5
 
-    // Add animations
+    // Set frames to hidden initally - don't set this in the stylesheet or it won't appear on mobile.
     tl.set(frames,{className:'+=hidden'})
 
+    // Add animations to timeline
     // Floor parts
     tl
     .from('#floor_top', floor_speed, {
@@ -62,18 +65,13 @@ class Reorganize extends Component {
        })
     }
 
+    // Return the timeline so DiagramWaypoint can trigger it.
     return tl
   }
 
   render() {
-    const frames = 9
-    const frameImgs = []
-    for (let i=1; i<=frames; i++) {
-      frameImgs.push(i)
-    }
-
     return (
-      <Diagram section={this.props.section} animate={this.animate}>
+      <DiagramWaypoint section={this.props.section} animate={this.animate}>
 
         <div className="reorganize-frames">
 
@@ -102,12 +100,9 @@ class Reorganize extends Component {
               </g>
           </svg>
 
-          {/* {frameImgs.map((i) => <div className={`create-frame create-frame-${i}`}></div>)} */}
-          {/* {frameImgs.map((i) => <img key={i} className={`create-frame create-frame-${i}`} alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAuIAAAGjAQMAAABTweIoAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAD1JREFUeNrtwQENAAAAwqD3T20ON6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF4MmdoAAZKFgs8AAAAASUVORK5CYII=" />)} */}
-
         </div>
 
-      </Diagram>
+      </DiagramWaypoint>
     )
   }
 }

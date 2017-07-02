@@ -1,16 +1,19 @@
 import React, { Component } from 'react'
 import Settings from '../settings'
 
+// This component:
+// 1. Sets up the basic page structure - kind of like your index.html used to.
+// 2. Adds the languages - currently: EN / RU
+// 3. Adds all the background elements
+
 // Import Page Components
+import Navigation from './Navigation'
 import Header from './Header'
-import Hero from './Hero'
 import Sections from './Sections'
 import Footer from './Footer'
 
 // Import Animation timline controls
-// import { TimelineMax } from 'TweenMax'
 import ScrollMagic from 'scrollmagic'
-// import Rellax from 'rellax'
 
 // Import Languages
 import en from '../languages/en.json'
@@ -64,8 +67,8 @@ class App extends Component {
             - pass controller to anything with a timeline
             - pass data to anything with text - will automatically handle language
           */}
+          <Navigation data={this.data.navigation} />
           <Header data={this.data.header} />
-          <Hero data={this.data.hero} />
           <Sections data={this.data.sections} controller={this.controller} />
           <Footer data={this.data.footer} />
         </div>

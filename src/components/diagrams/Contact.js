@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 
+// Import SVG icon components
 import IconRead from '../icons/IconRead'
 import IconPlay from '../icons/IconPlay'
 

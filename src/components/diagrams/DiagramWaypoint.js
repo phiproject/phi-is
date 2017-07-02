@@ -2,7 +2,13 @@ import React, { Component } from 'react'
 import Settings from '../../settings'
 import Waypoint from 'react-waypoint'
 
-class Diagram extends Component {
+// This component:
+// 1. listens for a component entering or leaving the view
+//    - When it enters it starts/restarts playing a 'timeline' object.
+//    - When it leaves it stops the 'timeline' object.
+// 2. Works with TimelineMax from GSAP and anime.js
+
+class DiagramWaypoint extends Component {
 
   componentWillMount() {
     // Setup object id, and a place to store animations
@@ -45,4 +51,4 @@ class Diagram extends Component {
   }
 }
 
-export default Diagram;
+export default DiagramWaypoint;

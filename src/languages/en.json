@@ -1,5 +1,5 @@
 {
-   "header":{
+   "navigation":{
       "left_links":[
          {
             "title":"About",
@@ -41,7 +41,7 @@
          }
       ]
    },
-   "hero":{
+   "header":{
       "title": "Hello I’m Phi.",
       "adjectives": [
          "Create",

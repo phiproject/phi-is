@@ -1,18 +1,20 @@
 import React, { Component } from 'react'
-import Diagram from './Diagram'
+import DiagramWaypoint from './DiagramWaypoint'
 
+// Import animation library
 import anime from 'animejs'
+
+// Import images
 import image from '../../images/simulate_base.png'
 
 class Simulate extends Component {
+
   animate = (diagram_id) => {
     // Setup Timeline
     const tl = anime.timeline({ loop: true })
-    // const elements = document.getElementByClassName('#'+diagram_id+' .simulate-line')
 
     // Add Timeline animations
-    tl
-    .add({
+    tl.add({
       targets: '#'+diagram_id+' .simulate-line',
       strokeDashoffset: [
         {
@@ -30,21 +32,14 @@ class Simulate extends Component {
       easing: 'easeInOutSine',
       delay: function(el, i) { return i * 750 },
     })
-   //  .add({
-   //    targets: '#'+diagram_id+' .simulate-line',
-   //    strokeDashoffset: [0, -200],
-   //    opacity: 0,
-   //    easing: 'easeInOutSine',
-   //    duration: 1500,
-   //    delay: function(el, i) { return i * 250 },
-   //  })
 
+    // Return the timeline so DiagramWaypoint can trigger it.
     return tl
   }
 
   render() {
     return (
-      <Diagram section={this.props.section} animate={this.animate}>
+      <DiagramWaypoint section={this.props.section} animate={this.animate}>
 
          <div className="simulate-wrapper">
 
@@ -86,7 +81,7 @@ class Simulate extends Component {
 
          </div>
 
-      </Diagram>
+      </DiagramWaypoint>
     )
   }
 }

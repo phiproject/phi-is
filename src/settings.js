@@ -1,10 +1,8 @@
-/*
-   Turn on and off differnet animation elements for performance
-   - import this file if a component has settings
-   - add a setting here then select:
-   - true = on
-   - false = off
-*/
+// Turn on and off different animation elements for performance
+// 1. import this file if a component has settings
+// 2. add a setting here then select:
+//    - true = on
+//    - false = off
 
 const window_width = window.innerWidth
 const mobile_width = 600

@@ -245,110 +245,6 @@ body {
     padding: 3em;
   }
 }
-.Animation {
-  min-height: 400px;
-  text-align: center;
-  color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-@media only screen and (max-width: 601px) {
-  .Animation {
-    min-height: 200px;
-    margin-top: 1em;
-  }
-}
-.diagram {
-  position: relative;
-  width: 78%;
-}
-.diagram img {
-  width: 100%;
-}
-@media only screen and (max-width: 601px) {
-  .diagram {
-    width: 110%;
-  }
-}
-.diagram-padding {
-  width: 100%;
-  margin: 0 auto;
-}
-.diagram-absolute {
-  position: absolute;
-}
-.about-images {
-  position: relative;
-  top: -50px;
-}
-@media only screen and (max-width: 601px) {
-  .about-images {
-    top: 0;
-  }
-}
-.about-images img {
-  width: 30%;
-  position: relative;
-}
-.about-images .about-create {
-  top: -150px;
-  left: 150px;
-}
-.about-images .about-simulate {
-  left: 250px;
-}
-.about-images .about-invest {
-  top: 150px;
-  left: 150px;
-}
-.about-images .about-reorganize {
-  top: 200px;
-  left: -150px;
-}
-.create-frames .create-frame.hidden {
-  opacity: 0;
-}
-.simulate-line {
-  stroke: #222;
-  stroke-width: 2px;
-}
-.simulate-line2 {
-  stroke-width: 2px;
-  stroke-dasharray: 5px;
-}
-.invest-svg {
-  margin: 0;
-}
-.reorganize-frames .reorg-frame.hidden {
-  opacity: 0;
-}
-#contact .svg-play {
-  position: relative;
-  top: -100px;
-  left: 50px;
-}
-#contact .svg-read {
-  position: relative;
-  top: 100px;
-  left: -50px;
-}
-@media only screen and (max-width: 601px) {
-  #contact .svg-play {
-    top: 0;
-    left: 0;
-  }
-  #contact .svg-read {
-    top: 100px;
-    left: 0;
-  }
-}
 .App {
   position: relative;
   text-align: center;
@@ -497,6 +393,110 @@ body {
   background-color: rgba(68,72,150,0.85);
   color: #fff;
 }
+.Diagram {
+  min-height: 400px;
+  text-align: center;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media only screen and (max-width: 601px) {
+  .Diagram {
+    min-height: 200px;
+    margin-top: 1em;
+  }
+}
+.diagram {
+  position: relative;
+  width: 78%;
+}
+.diagram img {
+  width: 100%;
+}
+@media only screen and (max-width: 601px) {
+  .diagram {
+    width: 110%;
+  }
+}
+.diagram-padding {
+  width: 100%;
+  margin: 0 auto;
+}
+.diagram-absolute {
+  position: absolute;
+}
+.about-images {
+  position: relative;
+  top: -50px;
+}
+@media only screen and (max-width: 601px) {
+  .about-images {
+    top: 0;
+  }
+}
+.about-images img {
+  width: 30%;
+  position: relative;
+}
+.about-images .about-create {
+  top: -150px;
+  left: 150px;
+}
+.about-images .about-simulate {
+  left: 250px;
+}
+.about-images .about-invest {
+  top: 150px;
+  left: 150px;
+}
+.about-images .about-reorganize {
+  top: 200px;
+  left: -150px;
+}
+.create-frames .create-frame.hidden {
+  opacity: 0;
+}
+.simulate-line {
+  stroke: #222;
+  stroke-width: 2px;
+}
+.simulate-line2 {
+  stroke-width: 2px;
+  stroke-dasharray: 5px;
+}
+.invest-svg {
+  margin: 0;
+}
+.reorganize-frames .reorg-frame.hidden {
+  opacity: 0;
+}
+#contact .svg-play {
+  position: relative;
+  top: -100px;
+  left: 50px;
+}
+#contact .svg-read {
+  position: relative;
+  top: 100px;
+  left: -50px;
+}
+@media only screen and (max-width: 601px) {
+  #contact .svg-play {
+    top: 0;
+    left: 0;
+  }
+  #contact .svg-read {
+    top: 100px;
+    left: 0;
+  }
+}
 .footer__box {
   text-align: left;
   display: block;
@@ -535,40 +535,6 @@ body {
   font-style: italic;
 }
 .Header {
-  text-align: center;
-  margin-bottom: 2em;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 50;
-}
-.header__link {
-  color: #fff;
-  display: inline;
-}
-.header__link:first-child {
-  margin-left: 0;
-}
-.header__link:last-child {
-  margin-right: 0;
-}
-.header__link:last-child:after {
-  content: '';
-  margin: 0;
-  padding: 0;
-}
-.header__link a {
-  -webkit-transition: all 75ms ease-in-out;
-  transition: all 75ms ease-in-out;
-  color: #fff;
-  border-radius: 5px;
-  padding: 0.75em;
-}
-.header__link a:hover {
-  background-color: rgba(68,72,150,0.85);
-}
-.Hero {
   margin-top: 3em;
   min-height: 600px;
   text-align: center;
@@ -583,15 +549,15 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-.Hero h1 {
+.Header h1 {
   padding: 0.5em 0;
 }
 @media only screen and (max-width: 601px) {
-  .Hero h1 {
+  .Header h1 {
     font-size: 3em;
   }
 }
-.Hero h2 {
+.Header h2 {
   font-size: 2em;
   display: inline;
   background-color: #444896;
@@ -600,7 +566,7 @@ body {
   padding: 0.5em;
   opacity: 0.9;
 }
-.Hero button {
+.Header button {
   width: 100%;
   -webkit-transition: all 75ms ease-in-out;
   transition: all 75ms ease-in-out;
@@ -613,17 +579,17 @@ body {
   text-align: center;
   opacity: 0.9;
 }
-.Hero button span {
+.Header button span {
   font-size: 14px;
   display: block;
   padding-bottom: 5px;
 }
-.Hero button:hover {
+.Header button:hover {
   opacity: 1;
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
 }
-.Hero button.alt {
+.Header button.alt {
   background-color: #fff;
   border-color: #fff;
   color: #444896;
@@ -691,6 +657,40 @@ body {
 #adjectives div.hidden {
   opacity: 0;
   display: none;
+}
+.Navigation {
+  text-align: center;
+  margin-bottom: 2em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+}
+.navigation__link {
+  color: #fff;
+  display: inline;
+}
+.navigation__link:first-child {
+  margin-left: 0;
+}
+.navigation__link:last-child {
+  margin-right: 0;
+}
+.navigation__link:last-child:after {
+  content: '';
+  margin: 0;
+  padding: 0;
+}
+.navigation__link a {
+  -webkit-transition: all 75ms ease-in-out;
+  transition: all 75ms ease-in-out;
+  color: #fff;
+  border-radius: 5px;
+  padding: 0.75em;
+}
+.navigation__link a:hover {
+  background-color: rgba(68,72,150,0.85);
 }
 .Sections {
   text-align: center;

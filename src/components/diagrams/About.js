@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
-import Diagram from './Diagram'
+import DiagramWaypoint from './DiagramWaypoint'
 
+// Import animation library
 import { TimelineMax, Sine } from 'TweenMax'
 
+// Import images
 import create_img from '../../images/about-create.png'
 import simulate_img from '../../images/about-simulate.png'
 import invest_img from '../../images/about-invest.png'
@@ -19,53 +21,30 @@ class About extends Component {
 
     // Add Timeline animations
     tl.staggerFrom('.about-image',speed,{
-      // bezier:{
-      //   type:'quadratic',
-      //   values:[
-      //     /*p1*/{x:'+=0', y:'+=0'},{x:'+=100', y:'+=0'},{x:'+=100', y:'+=100'},
-      //     /*p2*/{x:'+=100', y:'+=200'},{x:'+=0', y:'+=200'},
-      //     /*p3*/{x:'-=100', y:'+=200'},{x:'-=100', y:'+=100'},
-      //     /*p4*/{x:'-=100', y:'+=0'},{x:'+=0', y:'+=0'}
-      //   ]
-      // }/*bezier end*/,
       y: '+=60',
       opacity: 0,
       // scale: 0.8,
       ease: Sine.easeOut,
       delay: delayInterval,
-   }, stagger*2)
-   .from('#about-arrow',0.5,{
+    }, stagger*2)
+    .from('#about-arrow',0.5,{
       opacity: 0,
       ease: Sine.easeOut,
-   }, speed*2)
-   .staggerTo('.about-image',speed*3,{
+    }, speed*2)
+    .staggerTo('.about-image',speed*3,{
       y: '+=20',
       ease: Sine.easeInOut,
       repeat: -1,
       yoyo: true,
-   }, stagger*3)
+    }, stagger*3)
 
-
-    // tl.to('.about-image', 2, {
-    //   bezier:{
-    //     type:'quadratic',
-    //     values:[
-    //       /*p1*/{x:0, y:0},{x:100, y:0},{x:100, y:100},
-    //       /*p2*/{x:100, y:200},{x:0, y:200},
-    //       /*p3*/{x:-100, y:200},{x:-100, y:100},
-    //       /*p4*/{x:-100, y:0},{x:0, y:0}
-    //     ]
-    //   }/*bezier end*/,
-    //   ease:Sine.easeNone,
-    //   delay: 0.2,
-    // }, stagger);
-
+    // Return the timeline so DiagramWaypoint can trigger it.
     return tl
   }
 
   render() {
     return (
-      <Diagram section={this.props.section} animate={this.animate}>
+      <DiagramWaypoint section={this.props.section} animate={this.animate}>
 
         <svg className="about-images" viewBox="0 0 2067 1523" version="1.1">
             <defs></defs>
@@ -84,7 +63,7 @@ class About extends Component {
             </g>
         </svg>
 
-      </Diagram>
+      </DiagramWaypoint>
     )
   }
 }

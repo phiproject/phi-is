@@ -1,6 +1,12 @@
 import React, { Component } from 'react'
 import Chat from './Chat'
-import Animation from './Animation'
+import Diagram from './Diagram'
+
+// This component:
+// 1. Has a container that takes the json data and renders a new 'Section' for each part.
+// 2. Has 'Section' component that has:
+//    - Chat bubbles on the left
+//    - Diagrams on the right
 
 class Section extends Component {
    render() {
@@ -14,19 +20,23 @@ class Section extends Component {
                      controller={this.props.controller}
                   />
                </div>
+
                <div className="col s12 m12 l8">
-                  <Animation
+                  <Diagram
                      section={this.props.id}
                      controller={this.props.controller}
                      data={this.props}
                   />
                </div>
+
                <div id={`${this.props.id}-end`} className="section-end"></div>
 
          </div>
       )
    }
 }
+
+// The Sections component just loops through the json data.
 
 class Sections extends Component {
    render() {

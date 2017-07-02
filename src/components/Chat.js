@@ -1,60 +1,15 @@
 import React, { Component } from 'react'
 import Settings from '../settings'
 
+// This component:
+// 1. sets up the ScrollMagic timeline for each Chat bubble
+// 2. also contains the fade-out animation when sections near the top of the page
+
+// Import animation libraries
 import { TimelineMax, Sine } from 'TweenMax'
 import ScrollMagic from 'scrollmagic'
 import 'animation.gsap'
 import 'debug.addIndicators'
-
-
-function appear(id, section) {
-  // Setup timeline
-  const tl = new TimelineMax()
-
-  // Chat stagger animation
-  if (Settings.animation.chat) {
-    let elements = document.getElementById(id).getElementsByClassName('message')
-    tl.staggerFrom(elements,1.5,{
-      css: {
-        transform: 'translateY(40px)',
-        opacity: 0
-      },
-      ease: Sine.easeOut
-    },0.75)
-  }
-
-  // Fade background gradients
-  if (Settings.animation.gradients) {
-    tl.set('.bg-gradient-header', {css:{opacity: 1}})
-    tl.to('.bg-gradient-'+section,1,{
-      css: {
-        opacity: 1,
-      },
-      ease: Sine.easeInOut
-    },0)
-  }
-
-  return tl
-}
-
-function leave(id, section) {
-  // Setup timeline
-  const tl = new TimelineMax()
-
-  // Chat stagger animation
-  if (Settings.animation.chat) {
-    tl.to('#'+section,1.5,{
-      css: {
-        transform: 'translateY(-40px)',
-        opacity: 0
-      },
-      ease: Sine.easeOut
-    },0.75)
-  }
-
-  return tl
-}
-
 
 class Chat extends Component {
 
@@ -69,21 +24,63 @@ class Chat extends Component {
     // Setup animations once the component is actually in scope
     if (Settings.animation.on && Settings.animation.scroll) {
 
+      // Add 'appear' animation to ScrollMagic
       const scene = new ScrollMagic
       .Scene({triggerElement: "#"+this.section, duration: 300})
-      .setTween( appear(this.id, this.section) )
+      .setTween( this.appear(this.id, this.section) )
       .addTo(this.props.controller)
 
+      // Add 'leave' animation to ScrollMagic
       const scene2 = new ScrollMagic
       .Scene({triggerElement: "#"+this.section+'-end', duration: 300})
-      .setTween( leave(this.id, this.section) )
+      .setTween( this.leave(this.id, this.section) )
       .addTo(this.props.controller)
 
+      // Add in-page markers for debugging - turn off before 'npm run build'
       if (Settings.animation.scroll_indicators) {
         scene.addIndicators()
         scene2.addIndicators()
       }
     }
+  }
+
+  appear = (id, section) => {
+    // Setup timeline
+    const tl = new TimelineMax()
+
+    // Chat stagger animation
+    if (Settings.animation.chat) {
+      let elements = document.getElementById(id).getElementsByClassName('message')
+      tl.staggerFrom(elements,1.5,{
+        css: {
+          transform: 'translateY(40px)',
+          opacity: 0
+        },
+        ease: Sine.easeOut
+      },0.75)
+    }
+
+    // Return timeline so ScrollMagic can control it.
+    return tl
+  }
+
+  leave = (id, section) => {
+    // Setup timeline
+    const tl = new TimelineMax()
+
+    // Chat stagger animation
+    if (Settings.animation.chat) {
+      tl.to('#'+section,1.5,{
+        css: {
+          transform: 'translateY(-40px)',
+          opacity: 0
+        },
+        ease: Sine.easeOut
+      },0.75)
+    }
+
+    // Return timeline so ScrollMagic can control it.
+    return tl
   }
 
 

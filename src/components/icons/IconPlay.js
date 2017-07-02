@@ -1,5 +1,9 @@
 import React, { Component } from 'react'
 
+// This is pretty an SVG file dumped into a React component, with a few adjustments:
+// React components can't contain hyphenated properties e.g: 'stroke-width' must be 'strokeWidth'.
+// If you feed this component a 'title', and 'subtitle', it will render into the diagram.
+
 class IconPlay extends Component {
    render() {
       const { title, subtitle } = this.props

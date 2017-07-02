@@ -1,5 +1,5 @@
 {
-   "header":{
+   "navigation":{
       "left_links":[
          {
             "title":"О нас",
@@ -41,7 +41,7 @@
          }
       ]
    },
-   "hero":{
+   "header":{
       "title": "Привет, я Phi!",
       "adjectives": [
          "Create",
