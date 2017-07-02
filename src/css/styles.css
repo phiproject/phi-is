@@ -345,7 +345,7 @@ body {
   }
 }
 .bg-grid {
-  background-image: url("../images/grid.png");
+  background-image: url("../images/bg-grid.png");
   background-position: center -1px;
   position: absolute;
   left: 0;
@@ -356,7 +356,7 @@ body {
   opacity: 0.5;
 }
 .bg-mountains {
-  background-image: url("../images/mountains.png");
+  background-image: url("../images/bg-mountains.png");
   background-repeat: no-repeat;
   background-position: center 1200px;
   background-size: 100% auto;

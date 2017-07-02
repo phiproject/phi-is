@@ -5,10 +5,10 @@ import DiagramWaypoint from './DiagramWaypoint'
 import { TimelineMax, Sine, Back } from 'TweenMax'
 
 // Import images
-import create_img from '../../images/about-create.png'
-import simulate_img from '../../images/about-simulate.png'
-import invest_img from '../../images/about-invest.png'
-import reorganize_img from '../../images/about-reorganize.png'
+import create_img from '../../images/about/about-create.png'
+import simulate_img from '../../images/about/about-simulate.png'
+import invest_img from '../../images/about/about-invest.png'
+import reorganize_img from '../../images/about/about-reorganize.png'
 
 class About extends Component {
 

@@ -5,7 +5,7 @@ import DiagramWaypoint from './DiagramWaypoint'
 import anime from 'animejs'
 
 // Import images
-import image from '../../images/simulate_base.png'
+import image from '../../images/simulate-base.png'
 
 class Simulate extends Component {
 
