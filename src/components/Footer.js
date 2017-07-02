@@ -1,13 +1,24 @@
 import React, { Component } from 'react'
 
+// This component:
+// 1. contains description, team members, contributors
+// 2. each list uses renderPerson() to parse the json data.
+
 class Footer extends Component {
 
    renderPerson = (link, i) => (
       <span key={i} className="footer__person">
-         <a href={link.url} target={link.target}>
-            <span className="footer__person__name">{link.name}</span>
-            { (link.job) && <span className="footer__person__job">({link.job})</span> }
-         </a>
+         {link.url ? (
+            <a href={link.url} target={link.target}>
+               <span className="footer__person__name">{link.name}</span>
+               { link.job && <span className="footer__person__job">({link.job})</span> }
+            </a>
+         ):(
+            <span>
+               <span className="footer__person__name">{link.name}</span>
+               { link.job && <span className="footer__person__job">({link.job})</span> }
+            </span>
+         )}
       </span>
    )
 
@@ -35,7 +46,9 @@ class Footer extends Component {
 
             <div className="col s12 m6">
 
-               <div className="message message--blue footer__box footer__description">{description}</div>
+               <div className="message message--blue footer__box footer__description">
+                  {description}
+               </div>
 
                <div className="message footer__box footer__team">
                   <div className="footer__box__title">{ team_title }</div>
