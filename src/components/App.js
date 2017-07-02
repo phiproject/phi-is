@@ -37,14 +37,6 @@ class App extends Component {
     this.controller = new ScrollMagic.Controller();
   }
 
-  componentDidMount() {
-    // Setup parallax scrolling - use .rellax on elements
-    if (Settings.animation.on && Settings.animation.parallax) {
-      // this.rellax = new Rellax('.rellax',{center: true});
-    }
-  }
-
-
   render() {
     return (
       <div>
@@ -64,7 +56,7 @@ class App extends Component {
 
         <div className="App container">
           {/* Page Components
-            - pass controller to anything with a timeline
+            - pass controller to anything that uses ScrollMagic
             - pass data to anything with text - will automatically handle language
           */}
           <Navigation data={this.data.navigation} />
