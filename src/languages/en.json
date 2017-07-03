@@ -25,15 +25,15 @@
       "right_links":[
          {
             "title":"Contact",
-            "url":"#contact"
+            "url":"http://eepurl.com/cURjFf"
          },
          {
             "title":"Slack",
-            "url":""
+            "url":"http://eepurl.com/cURjFf"
          },
          {
             "title":"Github",
-            "url":""
+            "url":"http://eepurl.com/cURjFf"
          },
          {
             "title":"Русский",
@@ -183,7 +183,7 @@
             "Get in touch",
             "Say hi to contact@phi.is",
             "Join our slack at phiprojectteam.slack.com",
-            "Develop phi together: gitub.com/srelka-2017/phi"
+            "github.com/phiproject"
          ],
          "buttons": [
             {
@@ -191,7 +191,7 @@
                "subtitle":"Pink Paper",
                "alt":"Click to read the Pink Paper",
                "target":"",
-               "url":"",
+               "url":"https://docs.google.com/document/d/1TAbJTuXemQINX15Xg-Ij-3rwt3_UgB0Cy1JLAQNGLng/edit#",
                "type":""
             },
             {
@@ -199,7 +199,7 @@
                "subtitle":"Simulator",
                "alt":"Click to use the Phi Simulator",
                "target":"",
-               "url":"",
+               "url":"https://phi.zone",
                "type":"alt"
             }
          ]
