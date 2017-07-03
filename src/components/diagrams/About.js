@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import DiagramWaypoint from './DiagramWaypoint'
 
 // Import animation library
-import { TimelineMax, Sine, Back } from 'TweenMax'
+import { TimelineMax, Sine } from 'TweenMax'
 
 // Import images
 import create_img from '../../images/about/about-create.png'
