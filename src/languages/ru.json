@@ -33,7 +33,7 @@
          },
          {
             "title":"Github",
-            "url":"https://github.com/phiproject"
+            "url":"https://eepurl.com/cURjFf"
          },
          {
             "title":"English",
@@ -162,9 +162,8 @@
          "id": "contact",
          "chat":[
             "Свяжитесь с нами",
-            "Напишите нам на contact@phi.is",
-            "Присоединяйтесь к нашей группе в Slack: phiprojectteam.slack.com",
-            "gitub.com/phiproject"
+            "Напишите нам на phiprojectteam@gmail.com",
+            "Присоединяйтесь к нашей группе в Slack: phiprojectteam.slack.com"
          ],
          "buttons": [
             {

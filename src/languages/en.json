@@ -181,9 +181,8 @@
          "id": "contact",
          "chat":[
             "Get in touch",
-            "Say hi to contact@phi.is",
-            "Join our slack at phiprojectteam.slack.com",
-            "github.com/phiproject"
+            "Say hi at phiprojectteam@gmail.com",
+            "Join our slack at phiprojectteam.slack.com"
          ],
          "buttons": [
             {
