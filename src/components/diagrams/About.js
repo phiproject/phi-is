@@ -88,7 +88,7 @@ class About extends Component {
                     </g>
 
                     <g id="about-arrow" transform="translate(206.000000, 87.000000)">
-                        <path d="M82.3724698,871.327347 C30.3936453,785.970612 0.51034889,685.572245 0.51034889,578.287347 C0.51034889,272.924082 242.655605,24.2840816 545.473008,13.9542857" id="about-arrow-line" stroke="#000000" strokeWidth="2" strokeDasharray="5"></path>
+                        <path d="M82.3724698,871.327347 C30.3936453,785.970612 0.51034889,685.572245 0.51034889,578.287347 C0.51034889,272.924082 242.655605,24.2840816 545.473008,13.9542857" id="about-arrow-line" stroke="#000000" strokeWidth="4" strokeDasharray="10"></path>
                         <polygon id="about-arrow-1" fill="#000000" fillRule="nonzero" points="91.790236 860.816327 92.8769013 887.818776 68.7891533 875.133061"></polygon>
                         <polygon id="about-arrow-2" fill="#000000" fillRule="nonzero" points="541.85079 27.7273469 564.851873 13.5918367 541.126347 0.724897959"></polygon>
                     </g>

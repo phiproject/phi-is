@@ -9,7 +9,7 @@ const mobile_width = 600
 
 const Settings = {
    background: {
-      mountains: true,
+      mountains: false,
       grid: true,
       gradients: true
    },
