@@ -386,6 +386,16 @@ body {
   display: inline-block;
   font-size: 18px;
 }
+.message a {
+  -webkit-transition: all 75ms ease-in-out;
+  transition: all 75ms ease-in-out;
+  color: #444896;
+  text-decoration: none;
+}
+.message a:hover {
+  color: #5e63b6;
+  border-bottom: 1px solid #444896;
+}
 .message--blue {
   background-color: rgba(68,72,150,0.85);
   color: #fff;
@@ -521,15 +531,6 @@ body {
 .footer__person {
   margin: 0.25em 0 0 0;
   display: block;
-}
-.footer__person a {
-  -webkit-transition: all 75ms ease-in-out;
-  transition: all 75ms ease-in-out;
-  color: #444896;
-}
-.footer__person a:hover {
-  color: #5e63b6;
-  margin-left: 5px;
 }
 .footer__person__job {
   margin-left: 0.5em;
