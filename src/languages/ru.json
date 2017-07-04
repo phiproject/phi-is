@@ -162,8 +162,8 @@
          "id": "contact",
          "chat":[
             "Свяжитесь с нами",
-            "Напишите нам на phiprojectteam@gmail.com",
-            "Присоединяйтесь к нашей группе в Slack: phiprojectteam.slack.com"
+            "Напишите нам на <a href='mailto:phiprojectteam@gmail.com' target='_blank'>phiprojectteam@gmail.com</a>",
+            "Присоединяйтесь к нашей группе в Slack: <a href='//phiprojectteam.slack.com' target='_blank'>phiprojectteam.slack.com</a>"
          ],
          "buttons": [
             {

@@ -181,8 +181,8 @@
          "id": "contact",
          "chat":[
             "Get in touch",
-            "Say hi at phiprojectteam@gmail.com",
-            "Join our slack at phiprojectteam.slack.com"
+            "Say hi at <a href='mailto:phiprojectteam@gmail.com' target='_blank'>phiprojectteam@gmail.com</a>",
+            "Join our slack at <a href='//phiprojectteam.slack.com' target='_blank'>phiprojectteam.slack.com</a>"
          ],
          "buttons": [
             {

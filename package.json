@@ -9,6 +9,7 @@
     "react-dom": "^15.6.1",
     "react-ga": "^2.2.0",
     "react-gsap-enhancer": "^0.3.0",
+    "react-html-parser": "^1.0.3",
     "react-router": "^4.1.1",
     "react-router-dom": "^4.1.1",
     "react-waypoint": "^7.0.4",

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Settings from '../settings'
+import ReactHtmlParser from 'react-html-parser'
 
 // This component:
 // 1. sets up the ScrollMagic timeline for each Chat bubble
@@ -87,7 +88,7 @@ class Chat extends Component {
   renderMessage = (message, i) => (
     <div key={i} className="block chat-message">
       <div id={`${this.id}-${i}`} className="message">
-        <span>{ message }</span>
+        <span>{ ReactHtmlParser(message) }</span>
       </div>
     </div>
   )
