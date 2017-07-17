@@ -6,16 +6,16 @@
             "url":"#about"
          },
          {
-            "title":"Create",
-            "url":"#create"
-         },
-         {
             "title":"Simulate",
             "url":"#simulate"
          },
          {
             "title":"Invest",
             "url":"#invest"
+         },
+         {
+            "title":"Create",
+            "url":"#create"
          },
          {
             "title":"Reorganize",
@@ -29,11 +29,11 @@
          },
          {
             "title":"Slack",
-            "url":"http://eepurl.com/cURjFf"
+            "url":"https://phiprojectteam.slack.com"
          },
          {
             "title":"Github",
-            "url":"http://eepurl.com/cURjFf"
+            "url":"https://github.com/phiproject"
          },
          {
             "title":"Русский",
@@ -49,7 +49,7 @@
          "Invest",
          "Reorganize"
       ],
-      "subtitle": "Your interface to peer-to-peer energy",
+      "subtitle": "Your interface to p2p energy.",
       "buttons": [
          {
             "title":"Read",
@@ -142,7 +142,26 @@
          "id": "about",
          "chat":[
             "What is Phi?",
-            "Phi provides an environment for designing, simulating and managing renewable energy resources and biosensors."
+            "Phi provides an environment for designing, simulating and managing renewable energy resources and biosensors.",
+            "In the transition from fossil fuels, people need to create, store, and use electricity in more collaborative ways. Phi helps everyone set up and manage p2p energy projects that run on the blockchain."
+         ]
+      },
+      {
+         "id": "simulate",
+         "chat":[
+            "Reimagine renewable energy.",
+            "With Phi you can simulate p2p energy systems.",
+            "Add generators and peers to the map to see what is needed to build a reliable source of electrictricity.",
+            "Test different ideas before submitting projects for investment."
+         ]
+      },
+      {
+         "id": "invest",
+         "chat":[
+            "Crowdfund shared infrastructure.",
+            "Grow the value of clean and decentralized energy.",
+            "After a creation phase, Phi becomes a token-governed organization to facilitate financial, technical and social investment in renewable energy and biosensing.",
+            "Vote on proposals to manage shared funds."
          ]
       },
       {
@@ -150,39 +169,27 @@
          "chat":[
             "Build network infrastructure.",
             "By folding complex functionality from industrial energy management software into a intuitive chatbot interface, Phi allows anyone to take control over their energy production and consumption.",
-            "A multi-user application provides tools for joining the network, designing smart contracts, managing tokenized assets, and visualising energy transactions recorded in a public ledger."
-         ]
-      },
-      {
-         "id": "simulate",
-         "chat":[
-            "Reimagine renewable energy.",
-            "Phi allows you to simulate peer-to-peer energy systems, assisting decision making processes and creating value for new projects.",
-            "Add generators and peers to the map to see what is needed to build a reliable source of electrictricity."
-         ]
-      },
-      {
-         "id": "invest",
-         "chat":[
-            "Invest in peer-to-peer infrastructure.",
-            "Tokens redefine energy as a scarce data resource.",
-            "After a creation phase, Phi becomes a token-governed organization to facilitate financial, technical and social investment in renewable energy and biosensing."
+            "A multi-user application helps everyone to grow the network, reach collective desicions, design smart contracts, and manage tokens.",
+            "After investment, projects can be built. Tokens keep track of the electricity that moves through the network. This way we can reward behaviour that supports everyone, from consuming less power to keeping back-up batteries connected."
          ]
       },
       {
          "id": "reorganize",
          "chat":[
-            "Organize around renewable energy.",
+            "Reorganize energy systems.",
             "The transition from fossil fuels requires new ways of coordinating human and non-human actors.",
-            "Phi proposes a governance structure based on active peer-to-peer relationships. This makes it easy to join the Phi network and share the value of renewable energy."
+            "Phi will be the first DAO dedidacted to developing decentralized renewable energy projects.",
+            "Phi has its own core token, Phi Coin, which will be used in all aspects of managing the network.",
+            "Organizational structures based on active peer-to-peer relationships make it easy for everyone to join Phi and take part in a clean and collaborative energy future."
          ]
       },
       {
          "id": "contact",
          "chat":[
             "Get in touch",
-            "Say hi at <a href='mailto:phiprojectteam@gmail.com' target='_blank'>phiprojectteam@gmail.com</a>",
-            "Join our slack at <a href='//phiprojectteam.slack.com' target='_blank'>phiprojectteam.slack.com</a>"
+            "Say <a href='mailto:hello@phi.is' target='_blank'>hello@phi.is</a>",
+            "Join our slack at <a href='//phiprojectteam.slack.com' target='_blank'>phiprojectteam.slack.com</a>",
+            "Develop Phi together: <a href='//github.com/phiproject' target='_blank'>github.com/phiproject</a>"
          ],
          "buttons": [
             {
